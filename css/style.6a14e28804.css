@@ -162,7 +162,7 @@ header{
 
 /* ---------- сетки карточек ---------- */
 .grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(240px,1fr))}
-.grid.wide{grid-template-columns:repeat(auto-fill,minmax(320px,1fr))}
+.grid.wide{grid-template-columns:repeat(auto-fill,minmax(min(320px,100%),1fr))}
 .card{
     background:var(--glass);
     backdrop-filter:blur(16px);

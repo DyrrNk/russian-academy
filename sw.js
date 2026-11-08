@@ -1,9 +1,9 @@
 "use strict";
 /* Сгенерировано tools/build.js — не редактировать */
 const PREFIX = "russian-academy-" + registration.scope + "-";
-const CACHE = PREFIX + "49fc39f284";
-const PAGE = "index.49fc39f284.html";
-const ASSETS = ["index.49fc39f284.html","manifest.webmanifest","js/engine.b66b8e8a3d.js","js/data.de761c36ba.js","css/style.c0a448f8c5.css","images/icons/apple-touch-icon.png","images/icons/icon-192.png","images/icons/icon-512.png","images/icons/icon-maskable-512.png","images/kremlin-1600.jpg","images/kremlin-800.jpg"];
+const CACHE = PREFIX + "71bb440db6";
+const PAGE = "index.71bb440db6.html";
+const ASSETS = ["index.71bb440db6.html","manifest.webmanifest","js/engine.23cd70897a.js","js/data.de761c36ba.js","css/style.6a14e28804.css","images/icons/apple-touch-icon.png","images/icons/icon-192.png","images/icons/icon-512.png","images/icons/icon-maskable-512.png","images/kremlin-1600.jpg","images/kremlin-800.jpg"];
 
 self.addEventListener("install", e => {
     e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting()));
@@ -21,7 +21,8 @@ self.addEventListener("fetch", e => {
     if (e.request.mode === "navigate") {
         const clean = url.origin + url.pathname;
         /* Страницы уроков для поиска берём из сети; без интернета открываем тот же урок в приложении */
-        if (clean !== registration.scope && clean !== registration.scope + "index.html") {
+        const first = clean.slice(registration.scope.length).split("/")[0];
+        if (["track", "course", "lesson", "slovar"].includes(first)) {
             let rel = clean.slice(registration.scope.length);
             if (rel.endsWith("/")) rel = rel.slice(0, -1);
             if (rel === "slovar") rel = "glossary";
