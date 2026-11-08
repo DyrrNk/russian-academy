@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Russian Academy — русский язык онлайн: от алфавита до сертификата</title>
+    <meta name="description" content="Бесплатный курс русского языка: с нуля до C1, школьная программа, разговорная речь, подготовка к ТРКИ, Национальному сертификату Узбекистана и поступлению.">
+    <link rel="canonical" href="https://dyrrnk.github.io/russian-academy/">
+    <meta property="og:site_name" content="Russian Academy">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Russian Academy — русский язык онлайн: от алфавита до сертификата">
+    <meta property="og:description" content="Бесплатный курс русского языка: с нуля до C1, школьная программа, разговорная речь, подготовка к ТРКИ, Национальному сертификату Узбекистана и поступлению.">
+    <meta property="og:url" content="https://dyrrnk.github.io/russian-academy/">
+    <meta property="og:image" content="https://dyrrnk.github.io/russian-academy/images/icons/icon-512.png">
+    <meta property="og:locale" content="ru_RU">
+    
+    <meta name="theme-color" content="#0c1d36">
+    
+    <link rel="stylesheet" href="css/style.c0a448f8c5.css">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="apple-touch-icon" href="images/icons/apple-touch-icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="preload" href="js/engine.b66b8e8a3d.js" as="script">
+    <link rel="preload" href="js/data.de761c36ba.js" as="script">
+</head>
+<body>
+
+<div id="loader">
+    <div class="loaderContent">
+        <div class="loaderLogo">📚</div>
+        <h1>Russian Academy</h1>
+        <p>Образовательная платформа по русскому языку</p>
+        <div class="loadingBar"><div></div></div>
+    </div>
+</div>
+
+<div id="background"></div>
+<canvas id="particles"></canvas>
+
+<header>
+    <button id="menuToggle" aria-label="Меню">☰</button>
+    <div class="logo" data-go="#/home">📚 <span class="txt">Russian <span>Academy</span></span></div>
+    <form class="searchBox" id="searchForm" role="search">
+        <input id="searchInput" type="search" placeholder="Поиск: термин, правило, тема…" autocomplete="off">
+    </form>
+    <button class="chip" id="langBtn" data-lang="uz" title="Язык интерфейса">🌐 <span id="langLabel">UZ</span></button>
+    <div class="headerStats">
+        <span class="chip" title="Уровень">⭐ <b id="hLevel">1</b></span>
+        <span class="chip hideSm" title="Серия дней">🔥 <b id="hStreak">0</b></span>
+        <span class="chip" title="Монеты">💰 <b id="hCoins">0</b></span>
+    </div>
+</header>
+
+<div id="layout">
+
+    <aside id="sidebar">
+        <div class="panel playerCard">
+            <div class="avatar" id="avatar">👨‍🎓</div>
+            <h2 id="playerName">Гость</h2>
+            <p class="playerLevel">⭐ Уровень <span id="playerLevel">1</span></p>
+            <div class="bar"><div id="expFill" style="width:0"></div></div>
+            <p class="small" id="expText">0 / 100 XP</p>
+        </div>
+
+        <nav class="panel menu" id="menu">
+            <button class="menuButton" data-go="#/home"><span class="ic">🏠</span>Главная</button>
+            <button class="menuButton" data-go="#/placement"><span class="ic">🧭</span>Тест на уровень</button>
+            <button class="menuButton" data-go="#/review"><span class="ic">🔁</span>Повторение <span class="badge" id="reviewBadge" hidden>0</span></button>
+            <div class="menuLabel">Обучение</div>
+            <button class="menuButton" data-go="#/track/start"><span class="ic">🌱</span>Русский с нуля</button>
+            <button class="menuButton" data-go="#/track/theory"><span class="ic">📚</span>Справочник</button>
+            <button class="menuButton" data-go="#/track/school"><span class="ic">🏫</span>Школьная программа</button>
+            <button class="menuButton" data-go="#/track/speaking"><span class="ic">💬</span>Разговорная речь</button>
+            <div class="menuLabel">Экзамены</div>
+            <button class="menuButton" data-go="#/track/cert"><span class="ic">🎓</span>Сертификаты</button>
+            <button class="menuButton" data-go="#/track/admission"><span class="ic">🎯</span>Поступление</button>
+            <div class="menuLabel">Практика</div>
+            <button class="menuButton" data-go="#/glossary"><span class="ic">📖</span>Словарь терминов</button>
+            <button class="menuButton" data-go="#/games"><span class="ic">🎮</span>Игры</button>
+            <div class="menuSep"></div>
+            <button class="menuButton" data-go="#/achievements"><span class="ic">🏆</span>Достижения</button>
+            <button class="menuButton" data-go="#/shop"><span class="ic">🛒</span>Магазин</button>
+            <button class="menuButton" data-go="#/profile"><span class="ic">👤</span>Профиль</button>
+            <button class="menuButton" data-go="#/settings"><span class="ic">⚙</span>Настройки</button>
+        </nav>
+    </aside>
+
+    <main id="content" tabindex="-1"></main>
+
+    <aside id="rightPanel">
+        <div class="panel widget">
+            <h3>📅 Цель на сегодня</h3>
+            <p id="dailyText">Наберите 50 XP</p>
+            <div class="bar gold"><div id="dailyFill" style="width:0"></div></div>
+            <div class="btnRow"><button class="btn small" data-go="#/games">Тренироваться</button></div>
+        </div>
+        <div class="panel widget">
+            <h3>📊 Статистика</h3>
+            <div class="statRow"><span>🔥 Серия дней</span><b id="sStreak">0</b></div>
+            <div class="statRow"><span>✅ Уроков пройдено</span><b id="sLessons">0</b></div>
+            <div class="statRow"><span>🎮 Игр сыграно</span><b id="sGames">0</b></div>
+            <div class="statRow"><span>⭐ Всего опыта</span><b id="sXp">0</b></div>
+        </div>
+        <div class="panel widget">
+            <h3>💡 Совет профессора</h3>
+            <div class="professor">
+                <div class="face">👨🏻‍🏫</div>
+                <div class="speech" id="speech">Добро пожаловать в Академию!</div>
+            </div>
+            <div class="btnRow"><button class="btn ghost small" id="nextTip">Ещё совет</button></div>
+        </div>
+    </aside>
+</div>
+
+<footer><nav class="siteLinks" aria-label="Все курсы">
+        <div><a class="siteTrack" href="track/start/">🌱 Русский с нуля</a>
+            <a href="course/a0/">A0 — Старт: алфавит, звуки, чтение</a><a href="course/a1/">A1 — Элементарный уровень</a><a href="course/a2/">A2 — Базовый уровень (ТБУ)</a><a href="course/b1/">B1 — Первый уровень (ТРКИ-1)</a><a href="course/b2/">B2 — Второй уровень (ТРКИ-2)</a><a href="course/c1/">C1 — Свободное владение (ТРКИ-3)</a></div><div><a class="siteTrack" href="track/theory/">📚 Справочник</a>
+            <a href="course/th_phonetics/">Фонетика, графика, орфоэпия</a><a href="course/th_lexicon/">Лексика и фразеология</a><a href="course/th_morphemics/">Морфемика и словообразование</a><a href="course/th_morphology/">Морфология: части речи</a><a href="course/th_syntax/">Синтаксис</a><a href="course/th_punctuation/">Пунктуация</a><a href="course/th_spelling/">Орфография</a><a href="course/th_style/">Стилистика и культура речи</a></div><div><a class="siteTrack" href="track/school/">🏫 Школьная программа</a>
+            <a href="course/school_1_4/">1–4 классы</a><a href="course/school_5_6/">5–6 классы</a><a href="course/school_7_9/">7–9 классы</a><a href="course/school_10_11/">10–11 классы</a></div><div><a class="siteTrack" href="track/speaking/">💬 Разговорная речь</a>
+            <a href="course/sp_everyday/">Разговорный русский: повседневные ситуации</a><a href="course/sp_live/">Живая речь: этикет, интонация, идиомы</a></div><div><a class="siteTrack" href="track/cert/">🎓 Сертификаты</a>
+            <a href="course/cert_uz/">Национальный сертификат Узбекистана по русскому языку</a><a href="course/trki/">ТРКИ: общая подготовка (A1–C1)</a><a href="course/herzen/">Сертификат РГПУ им. А. И. Герцена</a><a href="course/rudn/">Сертификат РУДН</a><a href="course/migrant/">Комплексный экзамен для мигрантов</a></div><div><a class="siteTrack" href="track/admission/">🎯 Поступление</a>
+            <a href="course/adm_uz/">Вступительный тест в вузы Узбекистана (русский язык)</a><a href="course/adm_ru/">Поступление в вузы России и филиалы в Ташкенте</a><a href="course/adm_writing/">Сочинение, изложение и анализ текста</a></div>
+        <div><a class="siteTrack" href="slovar/">📖 Словарь терминов</a></div>
+    </nav>© 2026 Russian Academy · Русский язык: от алфавита до сертификата</footer>
+
+<div id="toast" role="status" aria-live="polite"></div>
+<div id="modal"><div id="modalWindow" class="panel"><button id="closeModal" aria-label="Закрыть">✖</button><div id="modalContent"></div></div></div>
+<script defer src="js/engine.b66b8e8a3d.js"></script>
+<script defer src="js/data.de761c36ba.js"></script>
+</body>
+</html>
