@@ -1,9 +1,9 @@
 "use strict";
 /* Сгенерировано tools/build.js — не редактировать */
 const PREFIX = "russian-academy-" + registration.scope + "-";
-const CACHE = PREFIX + "71bb440db6";
-const PAGE = "index.71bb440db6.html";
-const ASSETS = ["index.71bb440db6.html","manifest.webmanifest","js/engine.23cd70897a.js","js/data.de761c36ba.js","css/style.6a14e28804.css","images/icons/apple-touch-icon.png","images/icons/icon-192.png","images/icons/icon-512.png","images/icons/icon-maskable-512.png","images/kremlin-1600.jpg","images/kremlin-800.jpg"];
+const CACHE = PREFIX + "5f698c4417";
+const PAGE = "index.5f698c4417.html";
+const ASSETS = ["index.5f698c4417.html","manifest.webmanifest","js/engine.0673b6b256.js","js/data.de761c36ba.js","css/style.6633ea12f0.css","images/icons/apple-touch-icon.png","images/icons/icon-192.png","images/icons/icon-512.png","images/icons/icon-maskable-512.png","images/kremlin-1600.jpg","images/kremlin-800.jpg"];
 
 self.addEventListener("install", e => {
     e.waitUntil(caches.open(CACHE).then(c => c.addAll(ASSETS.map(u => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting()));
