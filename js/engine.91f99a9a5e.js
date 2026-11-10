@@ -1,4 +1,4 @@
-"use strict";window.RA_BUILD="420a323fc9";
+"use strict";window.RA_BUILD="ed8df74ae7";window.RA_SITE="https://dyrrnk.github.io/russian-academy/";window.RA_API="https://api-production-8c6c9.up.railway.app";
 "use strict";
 
 /* ==========================================================
@@ -647,7 +647,7 @@ RA.audio = {
 RA.i18n = {
 
     /* Что не переводим: тексты уроков, задания, варианты ответов */
-    skip: "#secTheory,.promptText,.critText,.box,.task,.examples,.dialog,.userName,.term,.q,.readText,.prompt,.opt,.explain,.flashFace,.tile,.letter,.wordChip,.answerLine,.speech,.searchResult,.logo,#playerName",
+    skip: ".userText,input,textarea,#secTheory,.promptText,.critText,.box,.task,.examples,.dialog,.userName,.term,.q,.readText,.prompt,.opt,.explain,.flashFace,.tile,.letter,.wordChip,.answerLine,.speech,.searchResult,.logo,#playerName",
 
     dict: {
         /* Общее */
@@ -666,6 +666,36 @@ RA.i18n = {
         "Образец ответа": "Javob namunasi", "Отметьте, что получилось": "Nima uddalanganini belgilang", "Сохранить оценку": "Bahoni saqlash", "Самопроверка завершена": "O‘z-o‘zini tekshirish yakunlandi", "Практика засчитана": "Mashq hisoblandi", "Это ваша собственная оценка, а не экзаменационный балл.": "Bu sizning shaxsiy bahoyingiz, imtihon bali emas.", "Прослушайте текст и ответьте на вопросы.": "Matnni tinglang va savollarga javob bering.",
         "Сначала закончите текущее задание": "Avval joriy topshiriqni tugating",
         "Приложение и работа без интернета": "Ilova va internetsiz ishlash", "Работа без интернета включится, когда сайт будет опубликован.": "Internetsiz ishlash sayt e’lon qilingach yoqiladi.", "Сайт сохранён на устройстве и работает без интернета.": "Sayt qurilmaga saqlandi va internetsiz ishlaydi.", "Сохраняем сайт на устройство…": "Sayt qurilmaga saqlanmoqda…", "Установить на устройство": "Qurilmaga o‘rnatish", "Приложение установлено": "Ilova o‘rnatildi", "Сайт обновлён. Новая версия откроется при следующем запуске.": "Sayt yangilandi. Yangi versiya keyingi ochilishda ishlaydi.", "На iPhone: откройте сайт в Safari, нажмите «Поделиться» и выберите «На экран Домой». Приложение хранит прогресс отдельно от Safari, поэтому сначала скачайте прогресс здесь, а затем загрузите его в приложении.": "iPhone’da: saytni Safari’da oching, «Ulashish»ni bosing va «Bosh ekranga»ni tanlang. Ilova natijani Safari’dan alohida saqlaydi, shuning uchun avval natijani shu yerda yuklab oling, keyin ilovaga yuklang.", "Не удалось сохранить сайт на устройство. Попробуем снова при подключении к интернету.": "Saytni qurilmaga saqlab bo‘lmadi. Internet ulanganda yana urinib ko‘ramiz.",
+        "Конструктор": "Konstruktor", "Конструктор учителя": "O‘qituvchi konstruktori", "Дуэль": "Duel", "Дуэль с другом": "Do‘st bilan duel",
+        "Мои наборы": "Mening to‘plamlarim", "Новый набор": "Yangi to‘plam", "Изменить": "O‘zgartirish", "Пока нет наборов.": "Hali to‘plamlar yo‘q.",
+        "Редактор набора": "To‘plam muharriri", "Название": "Nomi", "Автор": "Muallif", "Инструкция для учеников": "O‘quvchilar uchun ko‘rsatma",
+        "Сохранить": "Saqlash", "Открыть как ученик": "O‘quvchi sifatida ochish", "Поделиться": "Ulashish", "Закрыть": "Yopish",
+        "Вопросы теста": "Test savollari", "Выбор ответа": "Javob tanlash", "Вписать ответ": "Javobni yozish", "Верно / неверно": "To‘g‘ri / noto‘g‘ri",
+        "Из вопросов сайта": "Sayt savollaridan", "Вопрос": "Savol", "Вариант": "Variant", "Правильный ответ": "To‘g‘ri javob",
+        "Объяснение после ответа (необязательно)": "Javobdan keyingi izoh (ixtiyoriy)", "Слова для игр": "O‘yinlar uchun so‘zlar",
+        "Письменные и устные задания": "Yozma va og‘zaki topshiriqlar", "Задание": "Topshiriq", "Образец ответа": "Javob namunasi",
+        "Результаты учеников": "O‘quvchilar natijalari", "Ученик": "O‘quvchi", "Набор": "To‘plam", "Дата": "Sana", "Проверка": "Tekshiruv",
+        "Набор сохранён": "To‘plam saqlandi", "Ссылка скопирована": "Havola nusxalandi", "Код скопирован": "Kod nusxalandi",
+        "Ссылка для учеников": "O‘quvchilar uchun havola", "Копировать": "Nusxalash", "Отправить в Telegram": "Telegram’ga yuborish",
+        "Тест завершён": "Test yakunlandi", "Завершить тест": "Testni yakunlash", "Код результата для учителя:": "O‘qituvchi uchun natija kodi:",
+        "Копировать код": "Kodni nusxalash", "Вызвать друга": "Do‘stni chaqirish", "Порог пройден": "Chegara o‘tildi", "Порог не пройден": "Chegara o‘tilmadi",
+        "Ваше имя (попадёт в код результата)": "Ismingiz (natija kodiga kiradi)", "Имя и фамилия": "Ism va familiya", "Ваш ответ": "Javobingiz",
+        "Не удалось открыть набор": "To‘plamni ochib bo‘lmadi", "Карточки": "Kartochkalar", "Угадай слово": "So‘zni top",
+        "Вас вызвали на дуэль. Сможете лучше?": "Sizni duelga chaqirishdi. Yaxshiroq natija ko‘rsata olasizmi?", "Вы ответили не на все вопросы. Завершить?": "Barcha savollarga javob bermadingiz. Yakunlaysizmi?",
+        "Этот набор создан пользователем, а не Russian Academy. Сайт никогда не просит пароли, коды из SMS или оплату.": "Bu to‘plamni Russian Academy emas, foydalanuvchi yaratgan. Sayt hech qachon parol, SMS-kod yoki to‘lov so‘ramaydi.",
+        "Целостность кода": "Kod butunligi", "без искажений": "o‘zgartirilmagan", "⚠️ код изменён": "⚠️ kod o‘zgartirilgan",
+        "Мой класс": "Mening sinfim", "Классы": "Sinflar", "Классы учителя": "O‘qituvchi sinflari", "Войти": "Kirish", "Выйти": "Chiqish", "Почта": "Pochta", "Пароль": "Parol",
+        "Создать аккаунт": "Hisob yaratish", "Вход для учителя": "O‘qituvchi uchun kirish", "Регистрация учителя": "O‘qituvchini ro‘yxatdan o‘tkazish",
+        "Войти в класс": "Sinfga kirish", "Код класса (у учителя)": "Sinf kodi (o‘qituvchidan)", "Ваше имя — его увидит учитель": "Ismingiz — uni o‘qituvchi ko‘radi",
+        "Мои классы": "Mening sinflarim", "Новый класс": "Yangi sinf", "Создать класс": "Sinf yaratish", "Задания": "Topshiriqlar", "Ученики": "O‘quvchilar",
+        "Задать": "Berish", "Сдать задание": "Topshiriqni topshirish", "Задание сдано": "Topshiriq topshirildi", "Результат уже у учителя.": "Natija o‘qituvchiga yuborildi.",
+        "Код": "Kod", "учеников": "o‘quvchi", "заданий": "topshiriq", "Сдали": "Topshirdi", "не сдали": "topshirmadi", "средний результат": "o‘rtacha natija",
+        "Нужно сделать": "Bajarish kerak", "Все задания сданы": "Barcha topshiriqlar topshirildi", "Сдано": "Topshirildi", "Срок": "Muddat", "Срок прошёл": "Muddat o‘tdi", "Без срока": "Muddatsiz",
+        "Ответы": "Javoblar", "Сбросить": "Bekor qilish", "Удалить": "O‘chirish", "Выйти из класса": "Sinfdan chiqish", "Открыть классы": "Sinflarni ochish",
+        "Ответы: после срока (или вручную)": "Javoblar: muddatdan keyin (yoki qo‘lda)", "Ответы: когда я открою": "Javoblar: men ochganimda", "Ответы: сразу после сдачи": "Javoblar: topshirilgandan so‘ng darhol",
+        "Открыть ответы ученикам": "Javoblarni o‘quvchilarga ochish", "Ученики видят правильные ответы.": "O‘quvchilar to‘g‘ri javoblarni ko‘radi.", "Ответы скрыты от учеников": "Javoblar o‘quvchilardan yashirilgan",
+        "Закрыть вход": "Kirishni yopish", "Открыть вход": "Kirishni ochish", "Класс": "Sinf",
+        "Учитель закрыл вход в этот класс.": "O‘qituvchi bu sinfga kirishni yopgan.",
         /* Меню */
         "Главная": "Bosh sahifa", "Обучение": "O‘qish", "Русский с нуля": "Rus tili noldan", "Справочник": "Ma’lumotnoma",
         "Школьная программа": "Maktab dasturi", "Разговорная речь": "So‘zlashuv nutqi", "Экзамены": "Imtihonlar",
@@ -1216,6 +1246,7 @@ RA.Games = {
     },
 
     filterBar(opts) {
+        if (opts.terms) return ""; /* игра на словах учителя */
         return `<div class="tabs" style="justify-content:center">
             <button class="tab ${!opts.track ? "active" : ""}" data-gtrack="">Все темы</button>
             ${RA.tracks.map(t => `<button class="tab ${opts.track === t.id ? "active" : ""}" data-gtrack="${t.id}">${t.icon} ${t.title}</button>`).join("")}
@@ -1227,6 +1258,7 @@ RA.Games = {
     },
 
     terms(opts) {
+        if (opts.terms) return opts.terms;
         return RA.allTerms().filter(t => !opts.track || t.track === opts.track).map(t => RA.loc.term(t));
     },
 
@@ -1243,7 +1275,9 @@ RA.Games = {
         const id = this.current.id;
         const xp = Math.round(score * 3);
         const coins = Math.round(score);
-        if (score > 0) {
+        /* Игры на словах учителя не дают опыта: иначе его можно было бы набивать своими наборами */
+        const custom = !!(this.current.opts && this.current.opts.terms);
+        if (score > 0 && !custom) {
             RA.store.recordGame(id, score);
             RA.store.addXP(xp);
             RA.store.addCoins(coins);
@@ -1299,15 +1333,17 @@ RA.Games = {
             };
             root.querySelector("#know").onclick = () => {
                 if (!retried.has(t.term)) know++; /* очко — только если знали с первого раза */
-                learned[t.term] = true;
-                RA.store.srsLearned("t:" + t.term);
+                if (!opts.terms) {
+                    learned[t.term] = true;
+                    RA.store.srsLearned("t:" + t.term);
+                }
                 RA.store.save();
                 i++;
                 draw();
             };
             root.querySelector("#again2").onclick = () => {
                 retried.add(t.term);
-                RA.store.srsWrong("t:" + t.term);
+                if (!opts.terms) RA.store.srsWrong("t:" + t.term);
                 if (i < cards.length - 1) { cards.push(t); cards.splice(i, 1); }
                 draw();
             };
@@ -1335,7 +1371,7 @@ RA.Games = {
             let sel = null, found = 0;
             root.innerHTML = this.filterBar(opts) + this.stats([`Раунд ${round + 1} / ${rounds}`, `✅ ${score}`, `❌ ${mistakes}`]) + `
                 <div class="matchGrid"><div class="col">${left.map(x => `<button class="tile" data-side="l" data-k="${x.k}"><b>${x.text}</b></button>`).join("")}</div>
-                <div class="col">${right.map(x => `<button class="tile" data-side="r" data-k="${x.k}">${RA.util.esc(x.text)}</button>`).join("")}</div></div>`;
+                <div class="col">${right.map(x => `<button class="tile" data-side="r" data-k="${x.k}">${opts.terms ? x.text : RA.util.esc(x.text)}</button>`).join("")}</div></div>`;
             this.bindFilter(root);
             root.querySelectorAll(".tile").forEach(tile => tile.onclick = () => {
                 if (!sel || sel.dataset.side === tile.dataset.side) {
@@ -2006,6 +2042,7 @@ RA.pages = {
     /* ---------------- Игры ---------------- */
     games() {
         return this.head("🎮 Игры", "Тренируйте термины, ударения, орфографию и грамматику. За игры начисляются опыт и монеты.", [["Главная", "#/home"], ["Игры"]])
+            + `<div class="grid" style="margin-bottom:16px"><a class="card" href="#/duel"><div class="cardIcon">⚔️</div><h3>Дуэль с другом</h3><p>10 вопросов и ссылка-вызов: кто ответит лучше?</p></a><a class="card" href="#/builder"><div class="cardIcon">🧩</div><h3>Конструктор учителя</h3><p>Свои тесты, игры на своих словах и задания — по ссылке.</p></a></div>`
             + `<div class="grid">${RA.Games.list.map(g => {
                 const st = RA.store.data.games[g.id];
                 return `<a class="card" href="#/game/${g.id}"><div class="cardIcon">${g.icon}</div><h3>${g.title}</h3><p>${g.desc}</p>${st ? `<p class="small" style="margin-top:8px">Сыграно: ${st.played} · рекорд: ${st.best}</p>` : ""}</a>`;
@@ -2186,6 +2223,11 @@ RA.router = {
             case "course": out = P.course(parts[1]); break;
             case "lesson": out = P.lesson(parts[1], parts[2]); break;
             case "review": out = P.review(); break;
+            case "builder": out = P.builder(); break;
+            case "play": out = P.play(new URLSearchParams(query || "").get("d") || ""); break;
+            case "duel": out = P.duel(); break;
+            case "teacher": out = P.teacher(parts[1], parts[2]); break;
+            case "class": out = P.myclass(parts[1], parts[2]); break;
             case "placement": out = P.placement(); break;
             case "glossary": out = P.glossary(); break;
             case "games": out = P.games(); break;
@@ -2490,7 +2532,7 @@ RA.Practice = {
             const percent = Math.round(scores.reduce((a, b) => a + b, 0) / scores.length);
             const pass = lesson.pass || 66;
             const ok = percent >= pass;
-            if (ok) {
+            if (ok && !ctx.custom) {
                 const first = RA.store.completeLesson(ctx.course.id, lesson.id, 0);
                 if (first) { RA.store.addXP(30); RA.store.addCoins(10); }
             }
@@ -2671,6 +2713,1401 @@ RA.Practice = {
         };
         box.scrollIntoView({ behavior: "smooth", block: "nearest" });
     }
+};
+
+;
+"use strict";
+
+/* ==========================================================
+   Конструктор учителя: свои тесты, игры на своих словах и задания.
+   Набор целиком кодируется в ссылку (#/play?d=…), сервер не нужен.
+
+   БЕЗОПАСНОСТЬ: содержимое набора приходит из чужой ссылки.
+   Оно проходит RA.Pack.sanitize и выводится только как текст
+   (textContent или RA.util.esc), никогда как HTML.
+========================================================== */
+
+/* Маленький помощник: элемент с текстом и свойствами, без innerHTML */
+function h(tag, props, ...kids) {
+    const el = document.createElement(tag);
+    Object.entries(props || {}).forEach(([k, v]) => {
+        if (v === undefined || v === null || v === false) return;
+        if (k === "text") el.textContent = v;
+        else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+        else if (k === "className" || k === "value" || k === "checked" || k === "disabled") el[k] = v;
+        else el.setAttribute(k, v);
+    });
+    kids.flat().forEach(k => {
+        if (k === null || k === undefined || k === false) return;
+        el.appendChild(typeof k === "string" || typeof k === "number" ? document.createTextNode(String(k)) : k);
+    });
+    return el;
+}
+
+RA.Pack = {
+
+    LIMITS: { q: 100, w: 200, k: 10, str: 2000, long: 6000, bytes: 300000 },
+
+    newId() {
+        return Math.random().toString(36).slice(2, 10);
+    },
+
+    /* Приводим любые данные к безопасному набору известной формы */
+    sanitize(raw) {
+        const L = this.LIMITS;
+        const r = raw && typeof raw === "object" && !Array.isArray(raw) ? raw : {};
+        const s = (v, max) => typeof v === "string" ? v.slice(0, max || L.str) : "";
+        const num = (v, min, max, d) => Number.isFinite(v) ? Math.min(max, Math.max(min, Math.round(v))) : d;
+        const list = v => Array.isArray(v) ? v : [];
+
+        const q = list(r.q).slice(0, L.q).map(x => {
+            if (!x || typeof x !== "object") return null;
+            const base = { q: s(x.q), e: s(x.e) };
+            if (!base.q.trim()) return null;
+            if (x.t === "c") {
+                const o = list(x.o).slice(0, 6).map(v => s(v, 300)).filter(v => v.trim());
+                if (o.length < 2 || new Set(o).size !== o.length) return null;
+                return { ...base, t: "c", o, a: num(x.a, 0, o.length - 1, 0) };
+            }
+            if (x.t === "i") {
+                const a = (Array.isArray(x.a) ? x.a : [x.a]).map(v => s(v, 200)).filter(v => v.trim()).slice(0, 10);
+                return a.length ? { ...base, t: "i", a } : null;
+            }
+            if (x.t === "tf") return { ...base, t: "tf", a: x.a === true };
+            return null;
+        }).filter(Boolean);
+
+        const w = list(r.w).slice(0, L.w)
+            .map(p => Array.isArray(p) ? [s(p[0], 120).trim(), s(p[1], 500).trim()] : null)
+            .filter(p => p && p[0] && p[1]);
+
+        const k = list(r.k).slice(0, L.k).map(t => {
+            if (!t || typeof t !== "object" || !["write", "speak"].includes(t.type)) return null;
+            const task = {
+                type: t.type,
+                title: s(t.title, 200).trim() || "Задание",
+                prompt: s(t.prompt, L.long),
+                model: s(t.model, L.long),
+                criteria: list(t.criteria).map(v => s(v, 300).trim()).filter(Boolean).slice(0, 10),
+                min: num(t.min, 0, 5000, 0),
+                max: num(t.max, 0, 5000, 0),
+                time: num(t.time, 0, 240, 0),
+                prep: num(t.prep, 5, 1800, 60),
+                dur: num(t.dur, 10, 1800, 120)
+            };
+            return task.prompt.trim() ? task : null;
+        }).filter(Boolean);
+
+        const ch = r.ch && typeof r.ch === "object" ? { n: s(r.ch.n, 40), s: num(r.ch.s, 0, 1000, 0), t: num(r.ch.t, 1, 1000, 1) } : null;
+        return {
+            v: 1,
+            id: (s(r.id, 40).match(/^[a-z0-9]+$/) || [this.newId()])[0],
+            title: s(r.title, 200).trim() || "Без названия",
+            author: s(r.author, 80),
+            intro: s(r.intro, L.long),
+            timer: num(r.timer, 0, 300, 0),
+            pass: num(r.pass, 1, 100, 60),
+            shuffle: r.shuffle !== false,
+            q, w, k,
+            ch: ch && ch.n ? ch : null
+        };
+    },
+
+    /* ---------- Кодирование в ссылку ---------- */
+    toB64(bytes) {
+        let bin = "";
+        for (let i = 0; i < bytes.length; i += 0x8000) bin += String.fromCharCode.apply(null, bytes.subarray(i, i + 0x8000));
+        return btoa(bin).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+    },
+
+    fromB64(str) {
+        const bin = atob(str.replace(/-/g, "+").replace(/_/g, "/"));
+        const out = new Uint8Array(bin.length);
+        for (let i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+        return out;
+    },
+
+    async pipe(bytes, stream) {
+        const reader = new Blob([bytes]).stream().pipeThrough(stream).getReader();
+        const parts = [];
+        let size = 0;
+        for (;;) {
+            const { done, value } = await reader.read();
+            if (done) break;
+            size += value.length;
+            if (size > this.LIMITS.bytes) { reader.cancel(); throw new Error("too big"); }
+            parts.push(value);
+        }
+        const out = new Uint8Array(size);
+        let pos = 0;
+        parts.forEach(p => { out.set(p, pos); pos += p.length; });
+        return out;
+    },
+
+    /* "1…" — сжатый набор, "0…" — без сжатия (старые браузеры) */
+    async encode(pack) {
+        const bytes = new TextEncoder().encode(JSON.stringify(this.sanitize(pack)));
+        if (window.CompressionStream) {
+            try { return "1" + this.toB64(await this.pipe(bytes, new CompressionStream("deflate-raw"))); } catch (e) { /* без сжатия */ }
+        }
+        return "0" + this.toB64(bytes);
+    },
+
+    async decode(code) {
+        if (typeof code !== "string" || code.length > 400000 || !/^[01][A-Za-z0-9_-]+$/.test(code)) throw new Error("bad");
+        let bytes = this.fromB64(code.slice(1));
+        if (code[0] === "1") {
+            if (!window.DecompressionStream) throw new Error("old browser");
+            bytes = await this.pipe(bytes, new DecompressionStream("deflate-raw"));
+        } else if (bytes.length > this.LIMITS.bytes) {
+            throw new Error("too big");
+        }
+        return this.sanitize(JSON.parse(new TextDecoder().decode(bytes)));
+    },
+
+    baseUrl() {
+        if (location.protocol.startsWith("http")) return location.href.split("#")[0];
+        return window.RA_SITE || "https://dyrrnk.github.io/russian-academy/";
+    },
+
+    async link(pack) {
+        return this.baseUrl() + "#/play?d=" + await this.encode(pack);
+    },
+
+    /* ---------- Мои наборы (в этом браузере) ---------- */
+    KEY: "ra.packs",
+
+    all() {
+        try {
+            const list = JSON.parse(localStorage.getItem(this.KEY) || "[]");
+            return Array.isArray(list) ? list.map(p => this.sanitize(p)) : [];
+        } catch (e) { return []; }
+    },
+
+    save(pack) {
+        const clean = this.sanitize(pack);
+        const list = this.all().filter(p => p.id !== clean.id);
+        list.unshift(clean);
+        const json = JSON.stringify(list.slice(0, 100));
+        if (json.length > 1500000) return false;
+        try { localStorage.setItem(this.KEY, json); return true; } catch (e) { return false; }
+    },
+
+    remove(id) {
+        try { localStorage.setItem(this.KEY, JSON.stringify(this.all().filter(p => p.id !== id))); } catch (e) { /* хранилище недоступно */ }
+    },
+
+    /* ---------- Код результата ученика ----------
+       Короткая строка, которую ученик отправляет учителю. Контрольная сумма ловит
+       случайные искажения, но не защищает от подделки: проверка на сервере появится в платной версии. */
+    sum(s) {
+        let x = 7;
+        for (let i = 0; i < s.length; i++) x = (x * 31 + s.charCodeAt(i)) >>> 0;
+        return x.toString(36);
+    },
+
+    resultCode(pack, name, score, total) {
+        const r = { p: pack.id, n: String(name).slice(0, 40), s: score, t: total, d: RA.util.today() };
+        r.h = this.sum(r.p + "|" + r.n + "|" + r.s + "|" + r.t + "|" + r.d);
+        return "RA1-" + this.toB64(new TextEncoder().encode(JSON.stringify(r)));
+    },
+
+    readResult(code) {
+        try {
+            const m = String(code).trim().match(/^RA1-([A-Za-z0-9_-]{8,600})$/);
+            if (!m) return null;
+            const r = JSON.parse(new TextDecoder().decode(this.fromB64(m[1])));
+            if (!r || typeof r.p !== "string" || typeof r.n !== "string" || typeof r.d !== "string") return null;
+            if (!Number.isInteger(r.s) || !Number.isInteger(r.t) || r.t < 1 || r.t > 100 || r.s < 0 || r.s > r.t) return null;
+            return { p: r.p, n: r.n.slice(0, 40), s: r.s, t: r.t, d: r.d.slice(0, 10), ok: r.h === this.sum(r.p + "|" + r.n + "|" + r.s + "|" + r.t + "|" + r.d) };
+        } catch (e) { return null; }
+    },
+
+    /* Вопрос сайта → вопрос набора (только текст) */
+    fromSite(q) {
+        const p = RA.util.plain;
+        return { t: "c", q: p(q.q), o: q.o.map(p), a: q.a, e: p(q.e || "") };
+    }
+};
+
+/* ==========================================================
+   Редактор учителя: #/builder
+========================================================== */
+
+RA.Builder = {
+
+    pack: null,
+
+    blank() {
+        return { id: RA.Pack.newId(), title: "", author: RA.store.data.name !== "Гость" ? RA.store.data.name : "", intro: "", timer: 0, pass: 60, shuffle: true, q: [], w: [], k: [] };
+    },
+
+    render(root) {
+        root.textContent = "";
+        const classes = h("div", { className: "box tip" },
+            h("div", { className: "boxTitle", text: "👩‍🏫 Классы" }),
+            h("div", { text: "Создайте класс, выдайте набор как задание — ответы останутся на сервере, а результаты учеников появятся автоматически." }),
+            h("div", { className: "btnRow" }, h("a", { className: "btn small", href: "#/teacher", text: "Открыть классы" })));
+        root.append(classes, this.listView(), this.pack ? this.editor() : "", this.resultsView());
+    },
+
+    listView() {
+        const packs = RA.Pack.all();
+        return h("div", { className: "card" },
+            h("h2", { text: "📁 Мои наборы" }),
+            h("p", { className: "small", text: "Наборы хранятся в этом браузере. Чтобы ученики получили набор, поделитесь ссылкой." }),
+            packs.length ? h("div", { className: "lessonList" }, packs.map(p => h("div", { className: "lessonItem" },
+                h("div", { className: "info userText" }, h("b", { text: p.title }), h("span", { text: `${p.q.length} вопр. · ${p.w.length} слов · ${p.k.length} заданий` })),
+                h("button", { className: "btn ghost small", text: "✏️ Изменить", onclick: () => { this.pack = JSON.parse(JSON.stringify(p)); this.render(this.root); } }),
+                h("button", { className: "btn ghost small", text: "🗑", title: "Удалить", onclick: () => {
+                    if (!confirm(RA.t("Удалить набор? Ссылки, которые вы уже отправили, продолжат работать."))) return;
+                    RA.Pack.remove(p.id);
+                    if (this.pack && this.pack.id === p.id) this.pack = null;
+                    this.render(this.root);
+                } })
+            ))) : h("p", { className: "empty", text: "Пока нет наборов." }),
+            h("div", { className: "btnRow" }, h("button", { className: "btn", text: "➕ Новый набор", onclick: () => { this.pack = this.blank(); this.render(this.root); } }))
+        );
+    },
+
+    field(label, input) {
+        return h("div", { className: "field" }, h("label", { text: label }), input);
+    },
+
+    text(obj, key, props) {
+        const tag = props && props.rows ? "textarea" : "input";
+        const el = h(tag, { ...props, value: obj[key] == null ? "" : String(obj[key]) });
+        el.addEventListener("input", () => {
+            obj[key] = props && props.type === "number" ? Number(el.value) : el.value;
+        });
+        return el;
+    },
+
+    editor() {
+        const p = this.pack;
+        const box = h("div", { className: "card builder" });
+        box.append(
+            h("h2", { text: "✏️ Редактор набора" }),
+            this.field("Название", this.text(p, "title", { maxlength: 200, placeholder: "Например: Падежи, 7 класс" })),
+            this.field("Автор", this.text(p, "author", { maxlength: 80 })),
+            this.field("Инструкция для учеников", this.text(p, "intro", { rows: 3, maxlength: 6000 })),
+            h("div", { className: "grid" },
+                this.field("Таймер теста, мин (0 — без таймера)", this.text(p, "timer", { type: "number", min: 0, max: 300 })),
+                this.field("Порог прохождения, %", this.text(p, "pass", { type: "number", min: 1, max: 100 })),
+                h("label", { className: "crit" }, (() => {
+                    const c = h("input", { type: "checkbox", checked: p.shuffle });
+                    c.addEventListener("change", () => { p.shuffle = c.checked; });
+                    return c;
+                })(), h("span", { text: "Перемешивать вопросы и варианты" }))
+            ),
+            this.questionsView(),
+            this.wordsView(),
+            this.tasksView(),
+            h("div", { className: "btnRow" },
+                h("button", { className: "btn", text: "💾 Сохранить", onclick: () => this.saveCurrent(true) }),
+                h("button", { className: "btn ghost", text: "👁 Открыть как ученик", onclick: () => this.open() }),
+                h("button", { className: "btn ghost", text: "🔗 Поделиться", onclick: () => this.share() }),
+                h("button", { className: "btn ghost", text: "Закрыть", onclick: () => { this.pack = null; this.render(this.root); } })
+            ),
+            h("div", { className: "shareBox" })
+        );
+        return box;
+    },
+
+    saveCurrent(toast) {
+        const clean = RA.Pack.sanitize(this.pack);
+        if (!RA.Pack.save(clean)) { RA.ui.toast(RA.t("Не удалось сохранить: наборы занимают слишком много места или хранилище браузера недоступно")); return null; }
+        if (toast) RA.ui.toast(RA.t("Набор сохранён"));
+        return clean;
+    },
+
+    async open() {
+        const clean = this.saveCurrent(false);
+        if (!clean) return;
+        location.hash = "#/play?d=" + await RA.Pack.encode(clean);
+    },
+
+    async share() {
+        const clean = this.saveCurrent(false);
+        if (!clean) return;
+        if (!clean.q.length && !clean.w.length && !clean.k.length) { RA.ui.toast(RA.t("Добавьте хотя бы один вопрос, слово или задание")); return; }
+        const url = await RA.Pack.link(clean);
+        const box = this.root.querySelector(".shareBox");
+        box.textContent = "";
+        const input = h("textarea", { className: "linkBox", rows: 3, readonly: "readonly", value: url });
+        box.append(
+            h("h3", { text: "🔗 Ссылка для учеников" }),
+            input,
+            h("div", { className: "btnRow" },
+                h("button", { className: "btn small", text: "📋 Копировать", onclick: async () => {
+                    try { await navigator.clipboard.writeText(url); RA.ui.toast(RA.t("Ссылка скопирована")); }
+                    catch (e) { input.select(); document.execCommand("copy"); RA.ui.toast(RA.t("Ссылка скопирована")); }
+                } }),
+                h("a", { className: "btn ghost small", href: "https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(clean.title), target: "_blank", rel: "noopener", text: "✈️ Отправить в Telegram" })
+            ),
+            h("p", { className: "small", text: `Длина ссылки: ${url.length} символов. В ссылке содержатся и вопросы, и ответы: для настоящих контрольных она не защищена.` }),
+            location.protocol === "file:" ? h("p", { className: "small", text: "Ссылка ведёт на опубликованный сайт, поэтому сначала опубликуйте его новую версию." }) : ""
+        );
+        box.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    },
+
+    /* ---------- Вопросы ---------- */
+    questionsView() {
+        const p = this.pack;
+        const wrap = h("div", { className: "builderSection" }, h("h3", { text: `❓ Вопросы теста (${p.q.length})` }));
+        p.q.forEach((q, i) => wrap.append(this.questionCard(q, i)));
+        const add = (q) => { p.q.push(q); this.render(this.root); };
+        wrap.append(h("div", { className: "btnRow" },
+            h("button", { className: "btn ghost small", text: "+ Выбор ответа", onclick: () => add({ t: "c", q: "", o: ["", "", "", ""], a: 0, e: "" }) }),
+            h("button", { className: "btn ghost small", text: "+ Вписать ответ", onclick: () => add({ t: "i", q: "", a: [""], e: "" }) }),
+            h("button", { className: "btn ghost small", text: "+ Верно / неверно", onclick: () => add({ t: "tf", q: "", a: true, e: "" }) }),
+            h("button", { className: "btn ghost small", text: "📚 Из вопросов сайта", onclick: () => this.bank() })
+        ));
+        return wrap;
+    },
+
+    questionCard(q, i) {
+        const p = this.pack;
+        const types = { c: "Выбор ответа", i: "Вписать ответ", tf: "Верно / неверно" };
+        const card = h("div", { className: "qEdit" },
+            h("div", { className: "qEditHead" },
+                h("b", { text: `${i + 1}. ${RA.t(types[q.t])}` }),
+                h("button", { className: "btn ghost small", text: "↑", title: "Выше", disabled: i === 0, onclick: () => { [p.q[i - 1], p.q[i]] = [p.q[i], p.q[i - 1]]; this.render(this.root); } }),
+                h("button", { className: "btn ghost small", text: "🗑", title: "Удалить", onclick: () => { p.q.splice(i, 1); this.render(this.root); } })
+            ),
+            this.field("Вопрос", this.text(q, "q", { rows: 2, maxlength: 2000 }))
+        );
+        if (q.t === "c") {
+            const opts = h("div", { className: "optEdit" });
+            q.o.forEach((o, k) => {
+                const radio = h("input", { type: "radio", name: "a" + i + "_" + p.id, checked: q.a === k, title: "Правильный ответ" });
+                radio.addEventListener("change", () => { q.a = k; });
+                const input = h("input", { value: o, maxlength: 300, placeholder: `Вариант ${k + 1}` });
+                input.addEventListener("input", () => { q.o[k] = input.value; });
+                opts.append(h("label", { className: "optRow" }, radio, input,
+                    q.o.length > 2 ? h("button", { className: "btn ghost small", text: "✕", onclick: (e) => { e.preventDefault(); q.o.splice(k, 1); if (q.a >= q.o.length) q.a = 0; this.render(this.root); } }) : ""));
+            });
+            card.append(h("p", { className: "small", text: "Отметьте правильный вариант кружком." }), opts,
+                q.o.length < 6 ? h("button", { className: "btn ghost small", text: "+ Вариант", onclick: () => { q.o.push(""); this.render(this.root); } }) : "");
+        } else if (q.t === "i") {
+            const holder = { v: q.a.join(" | ") };
+            const input = this.text(holder, "v", { maxlength: 600, placeholder: "ответ | другой допустимый ответ" });
+            input.addEventListener("input", () => { q.a = holder.v.split("|").map(x => x.trim()).filter(Boolean); });
+            card.append(this.field("Правильные ответы (через |). Регистр и буквы ё/е не важны", input));
+        } else {
+            const sel = h("select", {}, h("option", { value: "1", text: "Верно" }), h("option", { value: "0", text: "Неверно" }));
+            sel.value = q.a ? "1" : "0";
+            sel.addEventListener("change", () => { q.a = sel.value === "1"; });
+            card.append(this.field("Правильный ответ", sel));
+        }
+        card.append(this.field("Объяснение после ответа (необязательно)", this.text(q, "e", { rows: 2, maxlength: 2000 })));
+        return card;
+    },
+
+    bank() {
+        const all = RA.allQuestions();
+        const body = h("div", {});
+        const input = h("input", { type: "search", placeholder: "Например: падеж, ударение, деепричастие…" });
+        const out = h("div", { className: "bankList" });
+        const draw = () => {
+            const s = RA.util.norm(input.value);
+            out.textContent = "";
+            if (s.length < 2) { out.append(h("p", { className: "small", text: `Всего вопросов на сайте: ${all.length}. Введите слово для поиска.` })); return; }
+            const found = all.filter(q => RA.util.norm(RA.util.plain(q.q + " " + q.o.join(" "))).includes(s)).slice(0, 40);
+            if (!found.length) { out.append(h("p", { className: "empty", text: "Ничего не найдено." })); return; }
+            found.forEach(q => {
+                const item = RA.Pack.fromSite(q);
+                const btn = h("button", { className: "btn small", text: "+ Добавить", onclick: () => {
+                    this.pack.q.push(item);
+                    btn.disabled = true;
+                    btn.textContent = RA.t("✓ Добавлено");
+                } });
+                out.append(h("div", { className: "bankItem" }, h("div", { className: "userText" }, h("b", { text: item.q }), h("div", { className: "small", text: "✓ " + item.o[item.a] })), btn));
+            });
+        };
+        input.addEventListener("input", draw);
+        body.append(h("h2", { text: "📚 Вопросы сайта" }), input, out);
+        RA.ui.modal("");
+        const content = document.getElementById("modalContent");
+        content.appendChild(body);
+        draw();
+        input.focus();
+        /* После закрытия окна показываем добавленные вопросы */
+        const modal = document.getElementById("modal");
+        const watch = new MutationObserver(() => {
+            if (!modal.classList.contains("show")) { watch.disconnect(); this.render(this.root); }
+        });
+        watch.observe(modal, { attributes: true, attributeFilter: ["class"] });
+    },
+
+    /* ---------- Слова для игр ---------- */
+    wordsView() {
+        const p = this.pack;
+        const holder = { v: p.w.map(x => x[0] + " — " + x[1]).join("\n") };
+        const area = this.text(holder, "v", { rows: 6, placeholder: "дом — uy\nкнига — kitob\nгласный звук — звук, при котором воздух проходит свободно" });
+        const info = h("p", { className: "small" });
+        const parse = () => {
+            p.w = holder.v.split("\n").map(line => {
+                const m = line.split(/\s+[—–-]\s+|\t/);
+                return m.length >= 2 ? [m[0].trim(), m.slice(1).join(" — ").trim()] : null;
+            }).filter(x => x && x[0] && x[1]).slice(0, RA.Pack.LIMITS.w);
+            info.textContent = RA.t("Слов для игр") + ": " + p.w.length + (p.w.length && p.w.length < 6 ? " · " + RA.t("для игры «Найди пару» нужно минимум 6") : "");
+        };
+        area.addEventListener("input", parse);
+        parse();
+        return h("div", { className: "builderSection" },
+            h("h3", { text: "🎮 Слова для игр" }),
+            h("p", { className: "small", text: "Одна строка — одна пара: слово, тире с пробелами, значение. Из них получатся карточки, «Найди пару» и «Угадай слово»." }),
+            area, info);
+    },
+
+    /* ---------- Письмо и говорение ---------- */
+    tasksView() {
+        const p = this.pack;
+        const wrap = h("div", { className: "builderSection" }, h("h3", { text: `✍️ Письменные и устные задания (${p.k.length})` }));
+        p.k.forEach((t, i) => {
+            const crit = { v: t.criteria.join("\n") };
+            const critArea = this.text(crit, "v", { rows: 3, placeholder: "Есть приветствие\nРаскрыты все пункты\nНе больше 3 ошибок" });
+            critArea.addEventListener("input", () => { t.criteria = crit.v.split("\n").map(x => x.trim()).filter(Boolean); });
+            wrap.append(h("div", { className: "qEdit" },
+                h("div", { className: "qEditHead" },
+                    h("b", { text: `${i + 1}. ${t.type === "write" ? RA.t("Письмо") : RA.t("Говорение")}` }),
+                    h("button", { className: "btn ghost small", text: "🗑", onclick: () => { p.k.splice(i, 1); this.render(this.root); } })),
+                this.field("Название", this.text(t, "title", { maxlength: 200 })),
+                this.field("Задание", this.text(t, "prompt", { rows: 3, maxlength: 6000 })),
+                t.type === "write"
+                    ? h("div", { className: "grid" },
+                        this.field("Минимум слов", this.text(t, "min", { type: "number", min: 0 })),
+                        this.field("Максимум слов", this.text(t, "max", { type: "number", min: 0 })),
+                        this.field("Время, мин", this.text(t, "time", { type: "number", min: 0 })))
+                    : h("div", { className: "grid" },
+                        this.field("Подготовка, сек", this.text(t, "prep", { type: "number", min: 5 })),
+                        this.field("Ответ, сек", this.text(t, "dur", { type: "number", min: 10 }))),
+                this.field("Критерии самопроверки (каждый с новой строки, минимум 1)", critArea),
+                this.field("Образец ответа", this.text(t, "model", { rows: 4, maxlength: 6000 }))
+            ));
+        });
+        const add = type => { p.k.push({ type, title: "", prompt: "", model: "", criteria: [], min: 0, max: 0, time: 0, prep: 60, dur: 120 }); this.render(this.root); };
+        wrap.append(h("div", { className: "btnRow" },
+            h("button", { className: "btn ghost small", text: "+ Письмо", onclick: () => add("write") }),
+            h("button", { className: "btn ghost small", text: "+ Говорение", onclick: () => add("speak") })));
+        return wrap;
+    },
+
+    /* ---------- Результаты учеников ---------- */
+    resultsView() {
+        const area = h("textarea", { rows: 4, placeholder: "RA1-…\nRA1-…" });
+        const out = h("div", {});
+        const draw = () => {
+            out.textContent = "";
+            const packs = Object.fromEntries(RA.Pack.all().map(p => [p.id, p.title]));
+            const rows = area.value.split(/\s+/).filter(Boolean).map(c => RA.Pack.readResult(c));
+            const bad = rows.filter(r => !r).length;
+            const good = rows.filter(Boolean).sort((a, b) => b.s / b.t - a.s / a.t);
+            if (!good.length && !bad) return;
+            const table = h("table", {},
+                h("thead", {}, h("tr", {}, ["Ученик", "Набор", "Результат", "Дата", "Целостность кода"].map(x => h("th", { text: x })))),
+                h("tbody", {}, good.map(r => h("tr", {},
+                    h("td", { text: r.n }),
+                    h("td", { text: packs[r.p] || ("№ " + r.p) }),
+                    h("td", { text: `${r.s} / ${r.t} (${Math.round(r.s / Math.max(1, r.t) * 100)}%)` }),
+                    h("td", { text: r.d }),
+                    h("td", { text: r.ok ? RA.t("без искажений") : RA.t("⚠️ код изменён") })))));
+            out.append(h("div", { className: "tableWrap lesson userText" }, table),
+                bad ? h("p", { className: "small", text: RA.t("Не удалось прочитать кодов") + ": " + bad }) : "");
+        };
+        area.addEventListener("input", draw);
+        return h("div", { className: "card" },
+            h("h2", { text: "📊 Результаты учеников" }),
+            h("p", { className: "small", text: "Вставьте коды результатов, которые прислали ученики. Каждый код — с новой строки. Код ловит случайные ошибки, но не защищает от подделки." }),
+            area, out);
+    }
+};
+
+/* ==========================================================
+   Прохождение набора учеником: #/play?d=…
+========================================================== */
+
+RA.Player = {
+
+    async mount(root, code) {
+        root.textContent = "";
+        root.append(h("p", { className: "empty", text: "⏳" }));
+        let pack;
+        try {
+            pack = await RA.Pack.decode(code);
+        } catch (e) {
+            root.textContent = "";
+            root.append(h("div", { className: "card empty" },
+                h("h2", { text: "Не удалось открыть набор" }),
+                h("p", { text: e && e.message === "old browser"
+                    ? "Обновите браузер: эта версия не умеет открывать сжатые наборы."
+                    : "Ссылка повреждена или обрезана. Попросите учителя прислать её ещё раз." })));
+            return;
+        }
+        this.pack = pack;
+        RA.busy = true;
+        root.textContent = "";
+        const name = h("input", { maxlength: 40, value: RA.store.data.name !== "Гость" ? RA.store.data.name : "", placeholder: "Имя и фамилия" });
+        this.nameInput = name;
+        const notice = h("div", { className: "box warn" }, h("div", { text: "Этот набор создан пользователем, а не Russian Academy. Сайт никогда не просит пароли, коды из SMS или оплату." }));
+        const intro = h("div", { className: "card userText" },
+            h("h1", { text: pack.title }),
+            pack.author ? h("p", { className: "small", text: RA.t("Автор") + ": " + pack.author }) : "",
+            pack.intro ? h("p", { className: "preLine", text: pack.intro }) : "",
+            pack.ch ? h("div", { className: "box tip" }, h("div", { className: "boxTitle", text: `⚔️ ${pack.ch.n} — ${pack.ch.s} / ${pack.ch.t}` }), h("div", { text: RA.t("Вас вызвали на дуэль. Сможете лучше?") })) : "");
+        const nameField = h("div", { className: "field" }, h("label", { text: "Ваше имя (попадёт в код результата)" }), name);
+        const tabs = h("div", { className: "tabs" });
+        const area = h("div", {});
+        const sections = [];
+        if (pack.q.length) sections.push(["❓ Тест (" + pack.q.length + ")", () => this.test(area)]);
+        if (pack.w.length) sections.push(["🎮 Игры (" + pack.w.length + ")", () => this.games(area)]);
+        if (pack.k.length) sections.push(["✍️ Задания (" + pack.k.length + ")", () => this.tasks(area)]);
+        sections.forEach(([label, open], i) => {
+            const b = h("button", { className: "tab" + (i ? "" : " active"), text: label, onclick: () => {
+                RA.Games.stop(); RA.Practice.stop();
+                tabs.querySelectorAll(".tab").forEach(x => x.classList.toggle("active", x === b));
+                area.textContent = "";
+                open();
+            } });
+            tabs.append(b);
+        });
+        root.append(notice, intro, h("div", { className: "card" }, nameField, tabs, area));
+        if (sections.length) sections[0][1]();
+        else area.append(h("p", { className: "empty", text: "В наборе пока ничего нет." }));
+    },
+
+    studentName() {
+        return (this.nameInput.value || "").trim().slice(0, 40) || RA.t("Без имени");
+    },
+
+    /* ---------- Тест ---------- */
+    test(area) {
+        const pack = this.pack;
+        let qs = pack.q.map(q => q.t === "c" && pack.shuffle ? RA.util.shuffleOptions(q) : q);
+        if (pack.shuffle) qs = RA.util.shuffle(qs);
+        const answers = new Array(qs.length).fill(undefined);
+        const list = h("div", { className: "quiz userText" });
+        let done = false;
+
+        qs.forEach((q, i) => {
+            const block = h("div", { className: "qBlock" }, h("div", { className: "q preLine", text: `${i + 1}. ${q.q}` }));
+            if (q.t === "i") {
+                const input = h("input", { className: "gameInput", placeholder: "Ваш ответ", maxlength: 200 });
+                input.addEventListener("input", () => { answers[i] = input.value; });
+                block.append(input);
+            } else {
+                const opts = q.t === "c" ? q.o : [RA.t("Верно"), RA.t("Неверно")];
+                const row = h("div", { className: "options" });
+                opts.forEach((o, k) => row.append(h("button", { className: "opt", text: o, onclick: (e) => {
+                    if (done) return;
+                    row.querySelectorAll(".opt").forEach(x => x.classList.remove("chosen"));
+                    e.currentTarget.classList.add("chosen");
+                    answers[i] = k;
+                } })));
+                block.append(row);
+            }
+            block.append(h("div", { className: "explainSlot" }));
+            list.append(block);
+        });
+
+        const timerEl = h("span", { className: "timer" });
+        const finishBtn = h("button", { className: "btn", text: "✅ Завершить тест" });
+        const bar = h("div", { className: "examBar" }, h("b", { text: pack.title }), timerEl, finishBtn);
+        const summary = h("div", {});
+        area.append(bar, summary, list, h("div", { className: "btnRow" }, h("button", { className: "btn", text: "✅ Завершить тест", onclick: () => finish(false) })));
+
+        const check = (q, a) => {
+            if (q.t === "i") return a !== undefined && q.a.some(x => RA.util.norm(x) === RA.util.norm(a));
+            if (q.t === "tf") return a === (q.a ? 0 : 1);
+            return a === q.a;
+        };
+
+        const finish = (timeout) => {
+            if (done) return;
+            if (!timeout && answers.some(a => a === undefined || a === "") && !confirm(RA.t("Вы ответили не на все вопросы. Завершить?"))) return;
+            done = true;
+            RA.Games.stop();
+            let score = 0;
+            [...list.children].forEach((block, i) => {
+                const q = qs[i];
+                const ok = check(q, answers[i]);
+                if (ok) score++;
+                block.querySelectorAll(".opt").forEach((b, k) => {
+                    b.disabled = true;
+                    const right = q.t === "c" ? k === q.a : k === (q.a ? 0 : 1);
+                    if (right) b.classList.add("correct");
+                    else if (k === answers[i]) b.classList.add("wrong");
+                });
+                const input = block.querySelector("input");
+                if (input) input.disabled = true;
+                const rightText = q.t === "c" ? q.o[q.a] : q.t === "i" ? q.a.join(" / ") : (q.a ? RA.t("Верно") : RA.t("Неверно"));
+                block.querySelector(".explainSlot").append(h("div", { className: "explain preLine",
+                    text: (ok ? "✅ " : "❌ " + RA.t("Правильно") + ": " + rightText + ". ") + (q.e || "") }));
+            });
+            const percent = Math.round(score / qs.length * 100);
+            const name = this.studentName();
+            const code = RA.Pack.resultCode(pack, name, score, qs.length);
+            const ch = pack.ch;
+            const verdict = ch ? (score / qs.length > ch.s / ch.t ? "🏆 Вы победили в дуэли!" : score / qs.length === ch.s / ch.t ? "🤝 Ничья!" : "😅 В этот раз победил соперник") : "";
+            const codeBox = h("textarea", { className: "linkBox", rows: 2, readonly: "readonly", value: code });
+            summary.append(h("div", { className: "card result" },
+                h("h2", { text: timeout ? "⏰ Время вышло!" : "Тест завершён" }),
+                h("div", { className: "big", text: percent + "%" }),
+                h("p", { text: `${score} / ${qs.length} · ${percent >= pack.pass ? "✅ " + RA.t("Порог пройден") : "❌ " + RA.t("Порог не пройден")} (${pack.pass}%)` }),
+                verdict ? h("p", { text: verdict }) : "",
+                h("p", { className: "small", text: "Код результата для учителя:" }),
+                codeBox,
+                h("div", { className: "btnRow", style: "justify-content:center" },
+                    h("button", { className: "btn small", text: "📋 Копировать код", onclick: async () => {
+                        try { await navigator.clipboard.writeText(code); } catch (e) { codeBox.select(); document.execCommand("copy"); }
+                        RA.ui.toast(RA.t("Код скопирован"));
+                    } }),
+                    h("button", { className: "btn ghost small", text: "⚔️ Вызвать друга", onclick: () => this.challenge(name, score, qs.length) }),
+                    h("button", { className: "btn ghost small", text: "🔄 Пройти заново", onclick: () => { RA.Games.stop(); area.textContent = ""; this.test(area); } }))));
+            finishBtn.disabled = true;
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+        finishBtn.addEventListener("click", () => finish(false));
+
+        if (pack.timer) {
+            const end = Date.now() + pack.timer * 60000;
+            const tick = () => {
+                const left = Math.max(0, Math.ceil((end - Date.now()) / 1000));
+                timerEl.textContent = "⏱ " + RA.Practice.clock(left);
+                timerEl.classList.toggle("low", left <= 60);
+                if (left <= 0) finish(true);
+            };
+            RA.Games.timers.push(setInterval(tick, 500));
+            tick();
+        }
+    },
+
+    async challenge(name, score, total) {
+        const url = await RA.Pack.link({ ...this.pack, ch: { n: name, s: score, t: total } });
+        const text = RA.t("Я набрал") + ` ${score} / ${total}. ` + RA.t("Сможешь лучше?");
+        const box = h("div", {},
+            h("h2", { text: "⚔️ Вызвать друга" }),
+            h("p", { text: "Отправьте ссылку: друг пройдёт те же вопросы и увидит ваш результат." }),
+            h("textarea", { className: "linkBox", rows: 3, readonly: "readonly", value: url }),
+            h("div", { className: "btnRow" },
+                h("button", { className: "btn small", text: "📋 Копировать", onclick: async () => {
+                    try { await navigator.clipboard.writeText(url); RA.ui.toast(RA.t("Ссылка скопирована")); } catch (e) { /* выделите вручную */ }
+                } }),
+                h("a", { className: "btn ghost small", href: "https://t.me/share/url?url=" + encodeURIComponent(url) + "&text=" + encodeURIComponent(text), target: "_blank", rel: "noopener", text: "✈️ Telegram" })));
+        RA.ui.modal("");
+        document.getElementById("modalContent").appendChild(box);
+    },
+
+    /* ---------- Игры на словах учителя ---------- */
+    games(area) {
+        /* Текст учителя заранее экранируем: игры выводят термины как HTML */
+        const terms = this.pack.w.map(([term, def]) => ({ term: RA.util.esc(term), def: RA.util.esc(def) }));
+        const root = h("div", { className: "gameArea userText" });
+        const buttons = h("div", { className: "btnRow", style: "justify-content:center" });
+        [["flash", "🃏 Карточки"], ["match", "🧩 Найди пару"], ["guess", "🔠 Угадай слово"]].forEach(([id, label]) => {
+            buttons.append(h("button", { className: "btn ghost small", text: label, onclick: () => RA.Games.start(id, root, { terms }) }));
+        });
+        area.append(buttons, root);
+        RA.Games.start("flash", root, { terms });
+    },
+
+    /* ---------- Письмо и говорение ---------- */
+    tasks(area) {
+        const esc = s => RA.util.esc(s).replace(/\n/g, "<br>");
+        const lesson = {
+            id: this.pack.id,
+            pass: this.pack.pass,
+            tasks: this.pack.k.map(t => ({
+                type: t.type,
+                title: esc(t.title),
+                prompt: esc(t.prompt),
+                model: esc(t.model || "—"),
+                criteria: (t.criteria.length ? t.criteria : [RA.t("Задание выполнено полностью")]).map(esc),
+                min: t.min || undefined,
+                max: t.max || undefined,
+                time: t.type === "write" ? (t.time || undefined) : t.dur,
+                prep: t.prep
+            }))
+        };
+        const root = h("div", { className: "userText" });
+        area.append(root);
+        RA.Practice.start(root, { course: { id: "pack" }, lesson, custom: true });
+    }
+};
+
+/* ==========================================================
+   Страницы
+========================================================== */
+
+RA.pages.builder = function () {
+    const html = this.head("🧩 Конструктор учителя", "Создавайте свои тесты, игры на своих словах и письменные или устные задания. Ученики открывают их по ссылке — регистрация не нужна.", [["Главная", "#/home"], ["Конструктор"]])
+        + `<div id="builderRoot" class="stack"></div>`;
+    return {
+        html, after: () => {
+            RA.Builder.root = document.getElementById("builderRoot");
+            RA.Builder.render(RA.Builder.root);
+        }
+    };
+};
+
+RA.pages.play = function (code) {
+    return {
+        html: `<div id="playRoot" class="stack"></div>`,
+        after: () => RA.Player.mount(document.getElementById("playRoot"), code)
+    };
+};
+
+/* Дуэль: 10 случайных вопросов сайта по выбранному направлению */
+RA.pages.duel = function () {
+    const html = this.head("⚔️ Дуэль", "Ответьте на 10 вопросов и отправьте ссылку другу: он получит те же вопросы и увидит ваш результат.", [["Главная", "#/home"], ["Игры", "#/games"], ["Дуэль"]])
+        + `<div class="grid" id="duelTracks"></div>`;
+    return {
+        html, after: () => {
+            const box = document.getElementById("duelTracks");
+            RA.tracks.forEach(t => {
+                const pool = RA.allQuestions().filter(q => q.track === t.id);
+                if (pool.length < 10) return;
+                box.append(h("button", { className: "card", onclick: async () => {
+                    const pack = {
+                        id: RA.Pack.newId(),
+                        title: "⚔️ " + RA.t("Дуэль") + ": " + t.title,
+                        shuffle: false,
+                        pass: 60,
+                        q: RA.util.pick(pool, 10).map(q => RA.Pack.fromSite(RA.util.shuffleOptions(q)))
+                    };
+                    location.hash = "#/play?d=" + await RA.Pack.encode(pack);
+                } }, h("div", { className: "cardIcon", text: t.icon }), h("h3", { text: t.title }), h("p", { text: `${pool.length} ${RA.t("вопросов")}` })));
+            });
+        }
+    };
+};
+
+;
+"use strict";
+
+/* ==========================================================
+   Классы: учитель (#/teacher…) и ученик (#/class…).
+   Данные хранит сервер (папка server, описание в server/API.md).
+   Ответы к заданиям класса остаются на сервере: ученик получает
+   вопросы без ответов, проверка идёт на сервере.
+   Всё, что пришло с сервера, выводится как текст (функция h из builder.js).
+========================================================== */
+
+RA.Api = {
+
+    base() {
+        if (window.RA_API) return window.RA_API.replace(/\/+$/, "");
+        /* Разработка: локальный сервер */
+        if (location.protocol === "file:" || /^(localhost|127\.0\.0\.1)$/.test(location.hostname)) return "http://localhost:8787";
+        return "";
+    },
+
+    enabled() {
+        return !!this.base();
+    },
+
+    messages: {
+        network: "Нет связи с сервером. Проверьте интернет и попробуйте ещё раз.",
+        invalid_credentials: "Неверная почта или пароль.",
+        email_taken: "Эта почта уже зарегистрирована. Войдите.",
+        unauthorized: "Сессия закончилась. Войдите снова.",
+        forbidden: "Нет доступа.",
+        not_found: "Не найдено.",
+        class_not_found: "Класс с таким кодом не найден.",
+        already_submitted: "Задание уже сдано.",
+        limit_reached: "Достигнут лимит.",
+        rate_limited: "Слишком много попыток. Подождите минуту.",
+        payload_too_large: "Слишком большой объём данных.",
+        join_closed: "Учитель закрыл вход в этот класс.",
+        method_not_allowed: "Это действие недоступно.",
+        bad_request: "Проверьте введённые данные.",
+        server_error: "Ошибка сервера. Попробуйте позже."
+    },
+
+    message(err) {
+        return RA.t(this.messages[err && err.code] || this.messages.server_error);
+    },
+
+    async call(method, path, body, token) {
+        let res;
+        try {
+            res = await fetch(this.base() + path, {
+                method,
+                headers: { ...(body ? { "Content-Type": "application/json" } : {}), ...(token ? { Authorization: "Bearer " + token } : {}) },
+                body: body ? JSON.stringify(body) : undefined
+            });
+        } catch (e) {
+            throw { code: "network" };
+        }
+        if (res.status === 204) return null;
+        let data = null;
+        try { data = await res.json(); } catch (e) { /* пустой ответ */ }
+        if (!res.ok) throw { code: (data && typeof data.error === "string") ? data.error : "server_error", status: res.status };
+        return data;
+    }
+};
+
+/* Сессии учителя и ученика в этом браузере */
+RA.Session = {
+
+    get(key) {
+        try {
+            const v = JSON.parse(localStorage.getItem(key) || "null");
+            return v && typeof v.token === "string" ? v : null;
+        } catch (e) { return null; }
+    },
+
+    set(key, value) {
+        try {
+            if (value) localStorage.setItem(key, JSON.stringify(value));
+            else localStorage.removeItem(key);
+        } catch (e) { /* хранилище недоступно */ }
+    },
+
+    teacher() {
+        const s = this.get("ra.teacher");
+        return s && s.teacher && typeof s.teacher.name === "string" ? s : null;
+    },
+    student() { return this.get("ra.student"); }
+};
+
+/* Короткие помощники интерфейса */
+const C = {
+    card(...kids) { return h("div", { className: "card" }, ...kids); },
+    error(box, err) {
+        box.textContent = "";
+        box.append(h("p", { className: "formError", text: RA.Api.message(err) }));
+    },
+    date(iso) {
+        if (!iso) return "";
+        const d = new Date(iso);
+        return isNaN(d) ? "" : d.toLocaleDateString("ru-RU", { day: "numeric", month: "long", year: "numeric" });
+    },
+    input(props) { return h("input", props); },
+    disabledNotice(root) {
+        root.append(C.card(h("h2", { text: "Классы скоро появятся" }),
+            h("p", { text: "Сервер классов ещё не подключён к этой версии сайта. Пока можно делиться наборами по ссылке в конструкторе." }),
+            h("div", { className: "btnRow" }, h("a", { className: "btn", href: "#/builder", text: "🧩 Конструктор" }))));
+    }
+};
+
+/* ==========================================================
+   Учитель
+========================================================== */
+
+RA.Teacher = {
+
+    token() {
+        const s = RA.Session.teacher();
+        return s && s.token;
+    },
+
+    async call(method, path, body) {
+        try {
+            return await RA.Api.call(method, path, body, this.token());
+        } catch (e) {
+            if (e.code === "unauthorized") {
+                RA.Session.set("ra.teacher", null);
+                RA.router.render();
+            }
+            throw e;
+        }
+    },
+
+    /* Вход и регистрация */
+    authView(root) {
+        let mode = "login";
+        const box = C.card();
+        const draw = () => {
+            box.textContent = "";
+            const email = C.input({ type: "email", autocomplete: "email", placeholder: "teacher@example.com", maxlength: 200 });
+            const pass = C.input({ type: "password", autocomplete: mode === "login" ? "current-password" : "new-password", minlength: 8, maxlength: 200 });
+            const name = C.input({ maxlength: 80, autocomplete: "name", placeholder: "Например: Нигора Каримова" });
+            const err = h("div", {});
+            const submit = h("button", { className: "btn", type: "submit", text: mode === "login" ? "Войти" : "Создать аккаунт" });
+            const form = h("form", { className: "authForm" },
+                mode === "register" ? h("div", { className: "field" }, h("label", { text: "Имя (видят ученики)" }), name) : "",
+                h("div", { className: "field" }, h("label", { text: "Почта" }), email),
+                h("div", { className: "field" }, h("label", { text: mode === "login" ? "Пароль" : "Пароль (не меньше 8 символов)" }), pass),
+                err, h("div", { className: "btnRow" }, submit));
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                submit.disabled = true;
+                try {
+                    const body = mode === "login" ? { email: email.value.trim(), password: pass.value } : { email: email.value.trim(), password: pass.value, name: name.value.trim() };
+                    const data = await RA.Api.call("POST", mode === "login" ? "/api/teacher/login" : "/api/teacher/register", body);
+                    RA.Session.set("ra.teacher", { token: data.token, teacher: data.teacher });
+                    RA.router.render();
+                } catch (ex) {
+                    C.error(err, ex);
+                    submit.disabled = false;
+                }
+            });
+            box.append(
+                h("h2", { text: mode === "login" ? "👩‍🏫 Вход для учителя" : "👩‍🏫 Регистрация учителя" }),
+                form,
+                h("p", { className: "small" },
+                    h("a", { href: "#", text: mode === "login" ? "Нет аккаунта? Зарегистрироваться" : "Уже есть аккаунт? Войти", onclick: (e) => { e.preventDefault(); mode = mode === "login" ? "register" : "login"; draw(); } })),
+                h("p", { className: "small", text: "Ученикам аккаунт не нужен: они входят по коду класса." }));
+        };
+        draw();
+        root.append(box);
+    },
+
+    async classesView(root) {
+        const s = RA.Session.teacher();
+        const head = C.card(
+            h("div", { className: "rowBetween" },
+                h("div", { className: "userText" }, h("b", { text: s.teacher.name }), h("div", { className: "small", text: s.teacher.email })),
+                h("button", { className: "btn ghost small", text: "Выйти", onclick: async () => {
+                    try { await RA.Api.call("POST", "/api/teacher/logout", null, this.token()); } catch (e) { /* всё равно выходим */ }
+                    RA.Session.set("ra.teacher", null);
+                    RA.router.render();
+                } })));
+        const list = C.card(h("p", { text: "⏳" }));
+        const nameInput = C.input({ maxlength: 80, placeholder: "Например: 7 «А» или Группа B1 вечер" });
+        const err = h("div", {});
+        const createBtn = h("button", { className: "btn", type: "submit", text: "➕ Создать класс" });
+        const form = h("form", { className: "inlineForm" }, nameInput, createBtn);
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            if (!nameInput.value.trim() || createBtn.disabled) return;
+            createBtn.disabled = true;
+            try {
+                const data = await this.call("POST", "/api/classes", { name: nameInput.value.trim() });
+                location.hash = "#/teacher/class/" + data.class.id;
+            } catch (ex) { C.error(err, ex); createBtn.disabled = false; }
+        });
+        root.append(head, C.card(h("h2", { text: "Новый класс" }), form, err), list);
+        try {
+            const data = await this.call("GET", "/api/classes");
+            list.textContent = "";
+            list.append(h("h2", { text: "🏫 Мои классы" }));
+            if (!data.classes.length) list.append(h("p", { className: "empty", text: "Пока нет классов." }));
+            data.classes.forEach(c => list.append(h("a", { className: "lessonItem", href: "#/teacher/class/" + encodeURIComponent(c.id) },
+                h("div", { className: "num", text: "🏫" }),
+                h("div", { className: "info userText" }, h("b", { text: c.name }), h("span", { text: `${RA.t("Код")}: ${c.code} · ${c.students} ${RA.t("учеников")} · ${c.assignments} ${RA.t("заданий")}` })))));
+        } catch (ex) { C.error(list, ex); }
+    },
+
+    async classView(root, id) {
+        const box = C.card(h("p", { text: "⏳" }));
+        root.append(h("p", {}, h("a", { href: "#/teacher", text: "← Мои классы" })), box);
+        let data;
+        try { data = await this.call("GET", "/api/classes/" + encodeURIComponent(id)); } catch (ex) { C.error(box, ex); return; }
+        const cls = data.class;
+        box.textContent = "";
+        const code = h("div", { className: "classCode", text: cls.code });
+        box.append(
+            h("h2", { className: "userText", text: "🏫 " + cls.name }),
+            h("p", { text: "Код для входа учеников:" }), code,
+            h("p", { className: "small", text: cls.joinOpen === false ? "🔒 Вход по коду закрыт: новые ученики не смогут войти." : "Ученики открывают «Мой класс» на сайте, вводят этот код и своё имя. Когда все войдут, закройте вход." }),
+            h("div", { className: "btnRow" },
+                h("button", { className: "btn ghost small", text: "📋 Скопировать приглашение", onclick: async () => {
+                    const text = `${RA.t("Вход в класс на Russian Academy")}: ${RA.Pack.baseUrl()}#/class\n${RA.t("Код")}: ${code.textContent}`;
+                    try { await navigator.clipboard.writeText(text); RA.ui.toast(RA.t("Приглашение скопировано")); } catch (e) { /* выделите вручную */ }
+                } }),
+                h("button", { className: "btn ghost small", text: "🔄 Новый код", onclick: async () => {
+                    if (!confirm(RA.t("Старый код перестанет работать для новых учеников. Продолжить?"))) return;
+                    try { code.textContent = (await this.call("POST", `/api/classes/${encodeURIComponent(id)}/code`)).code; } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+                } }),
+                h("button", { className: "btn ghost small", text: cls.joinOpen === false ? "🔓 Открыть вход" : "🔒 Закрыть вход", title: "Когда все ученики вошли, закройте вход: так никто не создаст второй аккаунт", onclick: async () => {
+                    try { await this.call("PATCH", "/api/classes/" + encodeURIComponent(id), { joinOpen: cls.joinOpen === false }); RA.router.render(); } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+                } }),
+                h("button", { className: "btn ghost small", text: "🗑 Удалить класс", onclick: async () => {
+                    if (!confirm(RA.t("Удалить класс вместе с учениками, заданиями и результатами? Это нельзя отменить."))) return;
+                    try { await this.call("DELETE", "/api/classes/" + encodeURIComponent(id)); location.hash = "#/teacher"; } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+                } })));
+
+        /* Задания */
+        const packs = RA.Pack.all().filter(p => p.q.length || p.k.length || p.w.length);
+        const select = h("select", {}, packs.length ? packs.map(p => h("option", { value: p.id, text: p.title })) : h("option", { value: "", text: RA.t("Сначала создайте набор в конструкторе") }));
+        const due = C.input({ type: "date", title: "Срок сдачи" });
+        const reveal = h("select", { title: "Когда ученики увидят правильные ответы" },
+            h("option", { value: "auto", text: RA.t("Ответы: после срока (или вручную)") }),
+            h("option", { value: "manual", text: RA.t("Ответы: когда я открою") }),
+            h("option", { value: "submit", text: RA.t("Ответы: сразу после сдачи") }));
+        const err = h("div", {});
+        const assignBtn = h("button", { className: "btn", type: "submit", text: "📌 Задать", disabled: !packs.length });
+        const assignForm = h("form", { className: "inlineForm" }, select, due, reveal, assignBtn);
+        assignForm.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            const pack = packs.find(p => p.id === select.value);
+            if (!pack || assignBtn.disabled) return;
+            const r = reveal.value === "auto" ? (due.value ? "due" : "manual") : reveal.value;
+            assignBtn.disabled = true;
+            try {
+                await this.call("POST", `/api/classes/${encodeURIComponent(id)}/assignments`, { pack, reveal: r, dueAt: due.value ? new Date(due.value + "T23:59:59").toISOString() : null });
+                RA.ui.toast(RA.t("Задание выдано классу"));
+                RA.router.render();
+            } catch (ex) { C.error(err, ex); assignBtn.disabled = false; }
+        });
+        const assignments = C.card(h("h2", { text: `📌 Задания (${data.assignments.length})` }),
+            h("p", { className: "small", text: "Выберите набор из конструктора. Ответы хранятся на сервере. «Сразу после сдачи» удобно для тренировки, но тогда ученик может узнать ответы через второй аккаунт — для проверочных работ выбирайте «после срока» или «когда я открою»." }),
+            assignForm, err,
+            h("div", { className: "lessonList" }, data.assignments.map(a => h("a", { className: "lessonItem", href: "#/teacher/a/" + encodeURIComponent(a.id) },
+                h("div", { className: "num", text: "📌" }),
+                h("div", { className: "info userText" }, h("b", { text: a.title }),
+                    h("span", { text: `${RA.t("Сдали")}: ${a.submitted} / ${data.students.length}` + (a.dueAt ? ` · ${RA.t("срок")} ${C.date(a.dueAt)}` : "") }))))));
+
+        /* Ученики */
+        const students = C.card(h("h2", { text: `👥 Ученики (${data.students.length})` }),
+            data.students.length ? h("div", { className: "lessonList" }, data.students.map(st => h("div", { className: "lessonItem" },
+                h("div", { className: "info userText" }, h("b", { text: st.name }), h("span", { text: RA.t("в классе с") + " " + C.date(st.joinedAt) })),
+                h("button", { className: "btn ghost small", text: "Удалить", onclick: async () => {
+                    if (!confirm(RA.t("Удалить ученика из класса? Его результаты тоже удалятся."))) return;
+                    try { await this.call("DELETE", `/api/classes/${encodeURIComponent(id)}/students/${encodeURIComponent(st.id)}`); RA.router.render(); } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+                } })))) : h("p", { className: "empty", text: "Пока никто не вошёл. Отправьте ученикам код класса." }));
+        root.append(assignments, students);
+    },
+
+    async resultsView(root, id) {
+        const box = C.card(h("p", { text: "⏳" }));
+        root.append(box);
+        let data;
+        try { data = await this.call("GET", `/api/assignments/${encodeURIComponent(id)}/results`); } catch (ex) { C.error(box, ex); return; }
+        const pack = RA.Pack.sanitize(data.assignment.pack);
+        const classId = data.assignment.classId;
+        if (classId) root.prepend(h("p", {}, h("a", { href: "#/teacher/class/" + encodeURIComponent(classId), text: "← Класс" })));
+        box.textContent = "";
+        const pct = r => r.percent === null || r.percent === undefined ? -1 : r.percent;
+        const results = data.results.slice().sort((a, b) => pct(b) - pct(a));
+        const scored = results.filter(r => pct(r) >= 0);
+        const avg = scored.length ? Math.round(scored.reduce((s, r) => s + r.percent, 0) / scored.length) : null;
+
+        /* Самые трудные вопросы: доля ошибок по каждому вопросу */
+        const hard = pack.q.map((q, i) => {
+            const wrong = results.filter(r => !RA.Teacher.isCorrect(q, r.answers && r.answers[i])).length;
+            return { q, i, wrong };
+        }).filter(x => x.wrong).sort((a, b) => b.wrong - a.wrong).slice(0, 5);
+
+        const revealLabel = { submit: "сразу после сдачи", due: "после срока сдачи", manual: "после нажатия кнопки справа" }[data.assignment.reveal] || "";
+        box.append(
+            h("h2", { className: "userText", text: "📊 " + data.assignment.title }),
+            h("p", { text: `${RA.t("Сдали")}: ${results.length} · ${RA.t("не сдали")}: ${data.notSubmitted.length}` + (avg === null ? "" : ` · ${RA.t("средний результат")}: ${avg}%`) }),
+            h("div", { className: "rowBetween" },
+                h("p", { className: "small", text: data.assignment.revealed ? "✅ " + RA.t("Ученики видят правильные ответы.") : "🔒 " + RA.t("Ответы скрыты от учеников") + (revealLabel ? ` (${RA.t("откроются")} ${RA.t(revealLabel)})` : "") }),
+                data.assignment.revealed ? "" : h("button", { className: "btn small", text: "🔓 Открыть ответы ученикам", onclick: async () => {
+                    if (!confirm(RA.t("Открыть правильные ответы всем ученикам класса? Отменить это нельзя."))) return;
+                    try { await this.call("POST", `/api/assignments/${encodeURIComponent(id)}/reveal`); RA.router.render(); } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+                } })),
+            h("div", { className: "tableWrap lesson userText" }, h("table", {},
+                h("thead", {}, h("tr", {}, ["Ученик", "Результат", "Сдано", ""].map(t => h("th", { text: t })))),
+                h("tbody", {}, results.map(r => h("tr", {},
+                    h("td", { text: r.name }),
+                    h("td", { text: r.total ? `${r.score} / ${r.total} (${r.percent}%)` : RA.t("Сдано") }),
+                    h("td", { text: C.date(r.submittedAt) }),
+                    h("td", {},
+                        h("button", { className: "btn ghost small", text: "Ответы", onclick: () => this.showAnswers(pack, r) }),
+                        h("button", { className: "btn ghost small", text: "Сбросить", title: "Ученик сможет пройти заново", onclick: async () => {
+                            if (!confirm(RA.t("Сбросить результат? Ученик сможет пройти задание заново."))) return;
+                            try { await this.call("DELETE", `/api/assignments/${encodeURIComponent(id)}/results/${encodeURIComponent(r.studentId)}`); RA.router.render(); } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+                        } }))))))),
+            data.notSubmitted.length ? h("p", { className: "small userText", text: RA.t("Ещё не сдали") + ": " + data.notSubmitted.map(s => s.name).join(", ") }) : "",
+            hard.length ? h("div", { className: "box warn userText" }, h("div", { className: "boxTitle", text: "⚠️ Где класс ошибается чаще всего" }),
+                h("ul", {}, hard.map(x => h("li", { text: `${x.wrong} / ${results.length} — ${x.q.q}` })))) : "",
+            h("div", { className: "btnRow" }, h("button", { className: "btn ghost", text: "🗑 Удалить задание", onclick: async () => {
+                if (!confirm(RA.t("Удалить задание вместе с результатами?"))) return;
+                try {
+                    await this.call("DELETE", "/api/assignments/" + encodeURIComponent(id));
+                    location.hash = classId ? "#/teacher/class/" + encodeURIComponent(classId) : "#/teacher";
+                } catch (ex) { RA.ui.toast(RA.Api.message(ex)); }
+            } })));
+    },
+
+    isCorrect(q, a) {
+        if (a === null || a === undefined) return false;
+        if (q.t === "c") return a === q.a;
+        if (q.t === "tf") return a === q.a;
+        const given = RA.util.norm(a);
+        return given !== "" && q.a.some(x => RA.util.norm(x) === given);
+    },
+
+    showAnswers(pack, r) {
+        const body = h("div", { className: "userText" }, h("h2", { text: r.name }), h("p", { text: r.total ? `${r.score} / ${r.total} (${r.percent}%)` : RA.t("Сдано") }));
+        pack.q.forEach((q, i) => {
+            const a = r.answers ? r.answers[i] : null;
+            const shown = a === null || a === undefined ? "—" : q.t === "c" ? (q.o[a] ?? "—") : q.t === "tf" ? (a ? RA.t("Верно") : RA.t("Неверно")) : String(a);
+            const ok = this.isCorrect(q, a);
+            body.append(h("div", { className: "explain" }, h("b", { text: `${i + 1}. ${q.q}` }), h("div", { text: (ok ? "✅ " : "❌ ") + shown })));
+        });
+        (r.texts || []).forEach((t, j) => {
+            if (!t) return;
+            body.append(h("h3", { text: (pack.k[j] && pack.k[j].title) || RA.t("Задание") }), h("div", { className: "readText", text: t }));
+        });
+        RA.ui.modal("");
+        document.getElementById("modalContent").appendChild(body);
+    }
+};
+
+/* ==========================================================
+   Ученик
+========================================================== */
+
+RA.Student = {
+
+    token() {
+        const s = RA.Session.student();
+        return s && s.token;
+    },
+
+    async call(method, path, body) {
+        try {
+            return await RA.Api.call(method, path, body, this.token());
+        } catch (e) {
+            /* Учитель удалил ученика или класс */
+            if (e.code === "unauthorized") {
+                RA.Session.set("ra.student", null);
+                RA.ui.toast(RA.t("Вы больше не в этом классе. Войдите снова по коду."));
+                RA.router.render();
+            }
+            throw e;
+        }
+    },
+
+    joinView(root) {
+        const code = C.input({ maxlength: 6, placeholder: "ABC123", autocapitalize: "characters", autocomplete: "off", className: "codeInput" });
+        const name = C.input({ maxlength: 40, placeholder: "Имя и фамилия", value: RA.store.data.name !== "Гость" ? RA.store.data.name : "" });
+        const err = h("div", {});
+        const submit = h("button", { className: "btn", type: "submit", text: "Войти в класс" });
+        const form = h("form", { className: "authForm" },
+            h("div", { className: "field" }, h("label", { text: "Код класса (у учителя)" }), code),
+            h("div", { className: "field" }, h("label", { text: "Ваше имя — его увидит учитель" }), name),
+            err, h("div", { className: "btnRow" }, submit));
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+            submit.disabled = true;
+            try {
+                const data = await RA.Api.call("POST", "/api/join", { code: code.value.trim().toUpperCase(), name: name.value.trim() });
+                RA.Session.set("ra.student", { token: data.token, student: data.student, class: data.class });
+                RA.router.render();
+            } catch (ex) {
+                C.error(err, ex);
+                submit.disabled = false;
+            }
+        });
+        root.append(C.card(h("h2", { text: "🏫 Войти в класс" }), form,
+            h("p", { className: "small", text: "Пароль не нужен. Вход сохранится в этом браузере." })));
+    },
+
+    async homeView(root) {
+        const s = RA.Session.student();
+        const box = C.card(h("p", { text: "⏳" }));
+        root.append(box);
+        let data;
+        try { data = await this.call("GET", "/api/student/me"); } catch (ex) { C.error(box, ex); return; }
+        box.textContent = "";
+        const todo = data.assignments.filter(a => !a.submitted);
+        box.append(
+            h("div", { className: "rowBetween" },
+                h("div", { className: "userText" }, h("h2", { text: "🏫 " + data.class.name }), h("p", { className: "small", text: RA.t("Вы вошли как") + " " + data.student.name })),
+                h("button", { className: "btn ghost small", text: "Выйти из класса", onclick: async () => {
+                    if (!confirm(RA.t("Выйти из класса на этом устройстве? Ваши результаты останутся у учителя, но вернуться под этим же именем будет нельзя — только войти заново по коду."))) return;
+                    try { await RA.Api.call("POST", "/api/student/logout", null, this.token()); } catch (e) { /* выходим и без связи */ }
+                    RA.Session.set("ra.student", null);
+                    RA.router.render();
+                } })),
+            h("p", { text: todo.length ? `📬 ${RA.t("Нужно сделать")}: ${todo.length}` : "🎉 " + RA.t("Все задания сданы") }),
+            data.assignments.length ? h("div", { className: "lessonList" }, data.assignments.map(a => {
+                const late = a.dueAt && !a.submitted && new Date(a.dueAt) < new Date();
+                return h("a", { className: "lessonItem" + (a.submitted ? " done" : ""), href: "#/class/a/" + encodeURIComponent(a.id) },
+                    h("div", { className: "num", text: a.submitted ? "✓" : late ? "⏰" : "📌" }),
+                    h("div", { className: "info userText" }, h("b", { text: a.title }),
+                        h("span", { text: a.submitted ? (a.total ? `${RA.t("Сдано")}: ${a.score} / ${a.total}` : RA.t("Сдано")) : a.dueAt ? `${late ? RA.t("Срок прошёл") : RA.t("Срок")}: ${C.date(a.dueAt)}` : RA.t("Без срока") })));
+            })) : h("p", { className: "empty", text: "Учитель пока не задал заданий." }));
+        if (s && data.student) RA.Session.set("ra.student", { ...s, student: data.student, class: data.class });
+    },
+
+    async assignmentView(root, id) {
+        const box = h("div", { className: "stack" }, C.card(h("p", { text: "⏳" })));
+        root.append(h("p", {}, h("a", { href: "#/class", text: "← Мой класс" })), box);
+        let data;
+        try { data = await this.call("GET", "/api/student/assignments/" + encodeURIComponent(id)); } catch (ex) { box.textContent = ""; const c = C.card(); C.error(c, ex); box.append(c); return; }
+        box.textContent = "";
+        const pack = data.pack;
+        box.append(C.card(h("div", { className: "userText" }, h("h1", { text: data.assignment.title }),
+            pack.intro ? h("p", { className: "preLine", text: pack.intro }) : "",
+            data.assignment.dueAt ? h("p", { className: "small", text: RA.t("Срок") + ": " + C.date(data.assignment.dueAt) }) : "")));
+        RA.busy = !data.assignment.submitted;
+        RA.ClassTest.mount(box, pack, data.result || null, async (answers, texts) => {
+            const result = await this.call("POST", `/api/student/assignments/${encodeURIComponent(id)}/submit`, { answers, texts });
+            RA.busy = false;
+            return result;
+        });
+    }
+};
+
+/* ==========================================================
+   Задание класса: вопросы без ответов, проверка на сервере
+========================================================== */
+
+RA.ClassTest = {
+
+    mount(root, pack, done, submit) {
+        const qs = (pack.q || []).map((q, i) => {
+            /* Перемешиваем варианты для показа, но храним исходные индексы */
+            const order = q.t === "c" ? (pack.shuffle ? RA.util.shuffle(q.o.map((_, k) => k)) : q.o.map((_, k) => k)) : null;
+            return { q, i, order };
+        });
+        const view = pack.shuffle ? RA.util.shuffle(qs) : qs;
+        const answers = new Array(qs.length).fill(null);
+        const texts = (pack.k || []).map(() => null);
+        const list = h("div", { className: "quiz userText" });
+        const blocks = [];
+
+        view.forEach((item, n) => {
+            const q = item.q;
+            const block = h("div", { className: "qBlock" }, h("div", { className: "q preLine", text: `${n + 1}. ${q.q}` }));
+            if (q.t === "i") {
+                const input = h("input", { className: "gameInput", placeholder: "Ваш ответ", maxlength: 200 });
+                input.addEventListener("input", () => { answers[item.i] = input.value; });
+                block.append(input);
+            } else {
+                const row = h("div", { className: "options" });
+                const opts = q.t === "c" ? item.order.map(k => ({ k, text: q.o[k] })) : [{ k: true, text: RA.t("Верно") }, { k: false, text: RA.t("Неверно") }];
+                opts.forEach(o => row.append(h("button", { className: "opt", text: o.text, "data-k": String(o.k), onclick: (e) => {
+                    row.querySelectorAll(".opt").forEach(x => x.classList.remove("chosen"));
+                    e.currentTarget.classList.add("chosen");
+                    answers[item.i] = o.k;
+                } })));
+                block.append(row);
+            }
+            block.append(h("div", { className: "explainSlot" }));
+            blocks[item.i] = block;
+            list.append(block);
+        });
+
+        const writeBoxes = [];
+        const tasks = h("div", { className: "userText" });
+        (pack.k || []).forEach((t, j) => {
+            const card = h("div", { className: "card", style: "margin-top:12px" },
+                h("span", { className: "tag", text: t.type === "write" ? "✍️ " + RA.t("Письмо") : "🎙 " + RA.t("Говорение") }),
+                h("h3", { text: t.title }), h("p", { className: "preLine", text: t.prompt }));
+            if (t.type === "write") {
+                const area = h("textarea", { className: "answerBox", rows: 8, maxlength: 10000, placeholder: "Напишите ответ здесь…" });
+                area.addEventListener("input", () => { texts[j] = area.value; });
+                writeBoxes[j] = area;
+                card.append(area, t.min || t.max ? h("p", { className: "small", text: `${RA.t("Слов")}: ${t.min || 0}–${t.max || "…"}` }) : "");
+            } else {
+                card.append(h("p", { className: "small", text: "Устный ответ подготовьте и расскажите учителю — на сервер он не отправляется." }));
+            }
+            card.append(h("div", { className: "modelSlot" }));
+            tasks.append(card);
+        });
+
+        const summary = h("div", {});
+        const err = h("div", {});
+        const submitBtn = h("button", { className: "btn", text: "📤 Сдать задание" });
+        root.append(summary, (pack.q || []).length ? C.card(list) : "", tasks, err, h("div", { className: "btnRow" }, submitBtn));
+
+        if ((pack.w || []).length) {
+            const games = h("div", {});
+            root.append(C.card(h("h2", { text: "🎮 Слова для тренировки" }), games));
+            RA.Player.pack = { w: pack.w };
+            RA.Player.games(games);
+        }
+
+        const showResult = (res) => {
+            /* После перезагрузки страницы восстанавливаем свои ответы */
+            (res.answers || []).forEach((a, i) => {
+                const block = blocks[i];
+                if (!block || a === null || a === undefined) return;
+                const input = block.querySelector("input");
+                if (input) { input.value = String(a); return; }
+                block.querySelectorAll(".opt").forEach(b => {
+                    const k = qs[i].q.t === "c" ? Number(b.dataset.k) : b.dataset.k === "true";
+                    if (k === a) b.classList.add("chosen");
+                });
+            });
+            submitBtn.remove();
+            list.querySelectorAll("button,input").forEach(x => { x.disabled = true; });
+            writeBoxes.forEach(a => { if (a) a.readOnly = true; });
+            const open = res.revealed !== false;
+            (res.review || []).forEach((rv, i) => {
+                const block = blocks[i];
+                if (!block) return;
+                const q = qs[i].q;
+                block.querySelectorAll(".opt").forEach(b => {
+                    const k = q.t === "c" ? Number(b.dataset.k) : b.dataset.k === "true";
+                    if (b.classList.contains("chosen")) b.classList.add(rv.correct ? "correct" : "wrong");
+                    else if (open && k === rv.answer) b.classList.add("correct");
+                });
+                let text = rv.correct ? "✅ " : "❌ ";
+                if (!rv.correct && open && rv.answer !== undefined) {
+                    const right = q.t === "c" ? (q.o[rv.answer] ?? "") : q.t === "tf" ? (rv.answer ? RA.t("Верно") : RA.t("Неверно")) : String(rv.answer ?? "");
+                    text += RA.t("Правильно") + ": " + right + ". ";
+                }
+                block.querySelector(".explainSlot").append(h("div", { className: "explain preLine", text: text + (open ? (rv.e || "") : "") }));
+            });
+            (res.models || []).forEach((m, j) => {
+                const slot = tasks.querySelectorAll(".modelSlot")[j];
+                if (slot && m) slot.append(h("h4", { text: "📋 " + RA.t("Образец ответа") }), h("div", { className: "readText", text: m }));
+            });
+            summary.textContent = "";
+            summary.append(h("div", { className: "card result" },
+                h("h2", { text: "📤 Задание сдано" }),
+                res.total ? h("div", { className: "big", text: (res.percent ?? 0) + "%" }) : "",
+                res.total ? h("p", { text: `${res.score} / ${res.total}` }) : "",
+                h("p", { className: "small", text: "Результат уже у учителя." }),
+                open ? "" : h("p", { className: "small", text: "🔒 Правильные ответы и объяснения появятся, когда учитель их откроет или пройдёт срок сдачи." })));
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+
+        if (done) { showResult(done); return; }
+
+        submitBtn.addEventListener("click", async () => {
+            const empty = answers.filter(a => a === null || a === "").length;
+            if (empty && !confirm(RA.t("Есть вопросы без ответа") + ": " + empty + ". " + RA.t("Сдать задание? Изменить ответы потом будет нельзя."))) return;
+            if (!empty && !confirm(RA.t("Сдать задание? Изменить ответы потом будет нельзя."))) return;
+            submitBtn.disabled = true;
+            try {
+                showResult(await submit(answers, texts));
+            } catch (ex) {
+                if (ex.code === "already_submitted" || ex.code === "not_found") {
+                    RA.busy = false;
+                    RA.ui.toast(RA.Api.message(ex));
+                    RA.router.render();
+                    return;
+                }
+                C.error(err, ex);
+                submitBtn.disabled = false;
+            }
+        });
+    }
+};
+
+/* ==========================================================
+   Страницы
+========================================================== */
+
+RA.pages.teacher = function (sub, id) {
+    const html = this.head("👩‍🏫 Классы учителя", "Создавайте классы, выдавайте наборы из конструктора и смотрите результаты учеников.", [["Главная", "#/home"], ["Конструктор", "#/builder"], ["Классы"]])
+        + `<div id="classRoot" class="stack"></div>`;
+    return {
+        html, after: () => {
+            const root = document.getElementById("classRoot");
+            if (!RA.Api.enabled()) return C.disabledNotice(root);
+            if (!RA.Teacher.token()) return RA.Teacher.authView(root);
+            if (sub === "class" && id) return RA.Teacher.classView(root, id);
+            if (sub === "a" && id) return RA.Teacher.resultsView(root, id);
+            return RA.Teacher.classesView(root);
+        }
+    };
+};
+
+RA.pages.myclass = function (sub, id) {
+    const html = this.head("🏫 Мой класс", "Задания от учителя: выполните и сдайте — результат сразу придёт учителю.", [["Главная", "#/home"], ["Мой класс"]])
+        + `<div id="classRoot" class="stack"></div>`;
+    return {
+        html, after: () => {
+            const root = document.getElementById("classRoot");
+            if (!RA.Api.enabled()) return C.disabledNotice(root);
+            if (!RA.Student.token()) return RA.Student.joinView(root);
+            if (sub === "a" && id) return RA.Student.assignmentView(root, id);
+            return RA.Student.homeView(root);
+        }
+    };
 };
 
 ;

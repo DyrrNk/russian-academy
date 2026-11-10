@@ -325,6 +325,33 @@ a.card:hover,button.card:hover{transform:translateY(-4px);border-color:var(--acc
 .siteLinks a:hover{color:var(--accent)}
 .siteLinks .siteTrack{color:var(--text);font-weight:700;margin-bottom:4px}
 
+/* ---------- конструктор ---------- */
+.builderSection{margin-top:22px;padding-top:14px;border-top:1px solid var(--line)}
+.qEdit{padding:12px 14px;border-radius:12px;background:var(--glass-2);border:1px solid var(--line);margin:10px 0}
+.qEditHead{display:flex;align-items:center;gap:8px}
+.qEditHead b{flex:1}
+.optEdit{display:flex;flex-direction:column;gap:6px;margin:6px 0}
+.optRow{display:flex;align-items:center;gap:8px}
+.optRow input:not([type]){flex:1;padding:8px 10px;border-radius:10px;border:1px solid var(--line);background:var(--glass-2)}
+.builder textarea,.card > textarea,.linkBox{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--glass-2);outline:none}
+.linkBox{font-size:12px;word-break:break-all}
+.bankList{margin-top:12px;max-height:55vh;overflow-y:auto}
+.bankItem{display:flex;gap:10px;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line)}
+.preLine{white-space:pre-line}
+#modalContent input[type=search]{width:100%;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--glass-2);margin-top:8px}
+
+/* ---------- классы ---------- */
+.formError{color:var(--bad);font-weight:600;margin:6px 0}
+.classCode{font-size:40px;font-weight:800;letter-spacing:.2em;color:var(--gold);font-variant-numeric:tabular-nums;margin:6px 0}
+.inlineForm{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin:10px 0}
+.inlineForm input,.inlineForm select{flex:1 1 200px;padding:10px 12px;border-radius:10px;border:1px solid var(--line);background:var(--glass-2)}
+.inlineForm input[type=date]{flex:0 1 170px}
+.authForm{max-width:420px}
+.authForm input{width:100%}
+.codeInput{font-size:24px;letter-spacing:.2em;text-transform:uppercase;text-align:center}
+.rowBetween{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.lessonItem button{flex:none}
+
 /* ---------- аудио и практика ---------- */
 .audioBox{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:10px 0;padding:12px 14px;border-radius:12px;background:var(--glass-2);border:1px solid var(--line)}
 .audioBox .bar{flex:1 1 100%}
